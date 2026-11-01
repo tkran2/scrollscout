@@ -37,6 +37,13 @@ class CoarseScroll:
             return float("nan")
         return float(np.hypot(y - c[0], x - c[1]) / self.radius[zi])
 
+    def in_papyrus(self, zyx0) -> bool:
+        """Whether the coarse CT shows papyrus at a level-0 point."""
+        idx = np.floor(np.asarray(zyx0, float) / self.factor).astype(int)
+        if (idx < 0).any() or (idx >= np.array(self.mask.shape)).any():
+            return False
+        return bool(self.mask[tuple(idx)])
+
     def z_fraction(self, zyx0) -> float:
         z = zyx0[0] / self.factor
         a, b = self.z_extent

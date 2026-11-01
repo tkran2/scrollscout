@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scrollscout"
-version = "0.1.0"
+version = "0.2.0"
 description = "Find where Herculaneum scroll papyrus is clean enough to trace, from public CT data, on a laptop CPU."
 readme = "README.md"
 license = { text = "MIT" }
@@ -14,11 +14,17 @@ dependencies = [
   "scipy>=1.10",
   "numcodecs>=0.12",
   "requests>=2.28",
+  "tifffile>=2023.1",
+  "imagecodecs>=2023.1",
 ]
 
 [project.optional-dependencies]
-figures = ["matplotlib>=3.7", "tifffile>=2023.1"]
+figures = ["matplotlib>=3.7"]
 test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/tkran2/scrollscout"
+Issues = "https://github.com/tkran2/scrollscout/issues"
 
 [project.scripts]
 scrollscout = "scrollscout.cli:main"
