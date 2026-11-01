@@ -19,8 +19,6 @@ import numpy as np  # noqa: E402
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scrollscout.atlas import inner_seeds  # noqa: E402
-from scrollscout.score import combined_score  # noqa: E402
-from scrollscout.stats import auc  # noqa: E402
 
 SURFACE = "#fcfcfb"
 INK = "#0b0b0b"
@@ -142,6 +140,176 @@ def fig_text_regions(results: Path, out: Path):
     fig.tight_layout()
     fig.savefig(out / "fig_text_regions.png", dpi=150)
     plt.close(fig)
+
+
+def fig_team_segments(results: Path, out: Path):
+    p = results / "team_segments.json"
+    if not p.exists():
+        return
+    d = json.loads(p.read_text())
+    groups = [("PHerc. 800\nfollows the sheet", lambda r: r["scroll"] == "PHerc0800" and r["label"] == 1, BLUE),
+              ("PHerc. 1447\nfollows the sheet", lambda r: r["scroll"] == "PHerc1447" and r["label"] == 1, BLUE),
+              ("PHerc. 1447\ncuts across layers", lambda r: r["scroll"] == "PHerc1447" and r["label"] == 0, ORANGE)]
+    fig, ax = plt.subplots(figsize=(9.6, 5.0))
+    rng = np.random.default_rng(0)
+    for i, (name, sel, col) in enumerate(groups):
+        segs = [r for r in d["segments"] if sel(r)]
+        for r in segs:
+            s = np.array([v for v in r["scores"] if v is not None and np.isfinite(v)])
+            ax.scatter(i + rng.uniform(-0.28, 0.28, s.size), s, s=9, color=col, alpha=0.25, edgecolor="none", zorder=2)
+        med = np.array([r["median"] for r in segs])
+        ax.scatter(i + rng.uniform(-0.12, 0.12, med.size), med, s=70, color=col, edgecolor=SURFACE, linewidth=1.6, zorder=4)
+        ax.text(i, 1.75, f"{len(segs)} segments", ha="center", color=INK2, fontsize=9)
+    ax.set_xticks(range(len(groups)))
+    ax.set_xticklabels([g[0] for g in groups])
+    ax.set_ylabel("scout score")
+    ax.set_ylim(-3.6, 2.0)
+    s = d["summary"]
+    ax.set_title(f"The team's own segments, on two scrolls never used to build the score:\n"
+                 f"all {s['n_good']} that follow the sheet score above all {s['n_bad']} that cut across layers "
+                 f"(AUC {s['auc']:.2f}, p = {s['p']:.4f})\nbig dots: segment medians; small dots: points on each segment",
+                 fontsize=10.5)
+    ax.grid(axis="x", visible=False)
+    fig.tight_layout()
+    fig.savefig(out / "fig_team_segments.png", dpi=150)
+    plt.close(fig)
+
+
+def fig_segment_check(results: Path, out: Path):
+    """check-segment's maps of a good and a typical bad team segment from the same scroll."""
+    from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
+
+    from scrollscout.segment import load_surface, no_papyrus, node_scores
+
+    p = results / "team_segments.json"
+    if not p.exists():
+        return
+    segs = [r for r in json.loads(p.read_text())["segments"] if r["scroll"] == "PHerc1447" and r["label"] is not None]
+    if not segs or "uv" not in segs[0]["points"][0]:
+        return
+    good = max((r for r in segs if r["label"] == 1), key=lambda r: r["median"])
+    bad = sorted((r for r in segs if r["label"] == 0), key=lambda r: r["median"])
+    bad = bad[len(bad) // 2]  # a typical one, not the worst
+    div = LinearSegmentedColormap.from_list("div", ["#e34948", "#f3b8b1", "#f0efec", "#9ec5f4", "#1c5cab"])
+    norm = TwoSlopeNorm(0.0, -2.5, 1.5)
+    fig, axs = plt.subplots(1, 2, figsize=(12.4, 5.6))
+    for ax, r, survey in zip(axs, (good, bad), ("follows the sheet", "cuts across several layers")):
+        surf = load_surface(f"s3://vesuvius-challenge-open-data/{r['scroll']}/segments/{r['segment']}/")
+        res = {"points": r["points"]}
+        img = np.full(surf.grid_shape, np.nan)
+        img[surf.uv[:, 0].astype(int), surf.uv[:, 1].astype(int)] = node_scores(surf, res)
+        im = ax.imshow(img, cmap=div, norm=norm, interpolation="nearest")
+        for q in r["points"]:
+            if no_papyrus(q):
+                ax.scatter([q["uv"][1]], [q["uv"][0]], s=46, marker="x", color=INK, linewidth=1.6, zorder=3)
+            elif q["score"] is not None and np.isfinite(q["score"]):
+                ax.scatter([q["uv"][1]], [q["uv"][0]], s=34, color="white", edgecolor=INK, linewidth=0.9, zorder=3)
+        h, w = surf.grid_shape
+        ax.set_xlim(-0.04 * w, 1.04 * w)
+        ax.set_ylim(1.04 * h, -0.04 * h)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.grid(False)
+        for sp in ax.spines.values():
+            sp.set_visible(False)
+        ax.set_title(f"survey: {survey}\nscout: {r['tool_verdict']} (median {r['median']:+.2f}, "
+                     f"{r['frac_clean']:.0%} of points clean)", fontsize=10, fontweight="normal")
+    fig.suptitle("check-segment on two of the team's PHerc. 1447 segments: each region takes the score of its "
+                 "nearest scored point (dots; x = no papyrus in the CT)", x=0.01, y=1.06, ha="left", fontweight="bold",
+                 fontsize=11)
+    cb = fig.colorbar(im, ax=axs.tolist(), shrink=0.75, pad=0.01)
+    cb.set_label("scout score (blue = clean papyrus, red = crushed)", color=INK2)
+    fig.savefig(out / "fig_segment_check.png", dpi=130, bbox_inches="tight")
+    plt.close(fig)
+
+
+def fig_census(results: Path, out: Path):
+    """check-segment's verdicts on every published segment that can be checked, per scroll."""
+    p = results / "segment_census.json"
+    if not p.exists():
+        return
+    rows = [r for r in json.loads(p.read_text())["segments"] if r["median_score"] is not None
+            and np.isfinite(r["median_score"])]
+    if not rows:
+        return
+    scrolls = sorted({r["scroll"] for r in rows}, key=lambda s: -sum(r["scroll"] == s for r in rows))
+    follow = np.array([sum(r["scroll"] == s and r["verdict"].endswith("follows the sheet") for r in rows) for s in scrolls])
+    total = np.array([sum(r["scroll"] == s for r in rows) for s in scrolls])
+    fig, ax = plt.subplots(figsize=(9.6, 0.55 * len(scrolls) + 1.6))
+    y = np.arange(len(scrolls))[::-1]
+    ax.barh(y, follow, color=BLUE, height=0.62, label="likely follows the sheet")
+    ax.barh(y, total - follow, left=follow, color=ORANGE, height=0.62, label="likely cuts across layers")
+    for yi, f, n in zip(y, follow, total):
+        ax.text(n + 0.6, yi, f"{f} of {n}", va="center", color=INK2, fontsize=9)
+    ax.set_yticks(y)
+    ax.set_yticklabels([s.replace("PHerc", "PHerc. ").replace(". 0", ". ") for s in scrolls])
+    ax.set_xlabel("published segments")
+    ax.set_xlim(0, total.max() * 1.15)
+    ax.grid(axis="y", visible=False)
+    ax.legend(loc="lower right", fontsize=9)
+    ax.set_title(f"check-segment on all {len(rows)} published segments it can check: "
+                 f"{follow.sum()} likely follow their sheet", fontsize=10.5)
+    fig.tight_layout()
+    fig.savefig(out / "fig_census.png", dpi=150)
+    plt.close(fig)
+
+
+def fig_scroll_details(dense: Path, out: Path):
+    """Cross-sections of the densely scanned scrolls, with every nearby sample point coloured by score."""
+    from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
+
+    from scrollscout.atlas import inner_seeds
+    from scrollscout.sampling import load_coarse
+
+    files = sorted(dense.glob("PHerc*.json"))
+    if not files:
+        return
+    div = LinearSegmentedColormap.from_list("div", ["#e34948", "#f3b8b1", "#f0efec", "#9ec5f4", "#1c5cab"])
+    for f in files:
+        d = json.loads(f.read_text())
+        s = d["summary"]
+        cs = load_coarse(s["ct"])
+        fac = cs.factor
+        pts = [p for p in d["points"] if np.isfinite(p["score"])]
+        seeds = inner_seeds(pts, k=3)
+        zs = [int(sd["zyx"][0] / fac) for sd in seeds] or [int(np.mean(cs.z_extent))]
+        band = max(6, int(0.06 * (cs.z_extent[1] - cs.z_extent[0])))
+        fig, axs = plt.subplots(1, len(zs), figsize=(5.0 * len(zs), 5.4))
+        axs = np.atleast_1d(axs)
+        for ax, zc, sd in zip(axs, zs, seeds or [None] * len(zs)):
+            ax.imshow(cs.vol[zc], cmap="gray", vmin=0, vmax=np.percentile(cs.vol[cs.vol > 0], 99.5))
+            near = [p for p in pts if abs(p["zyx"][0] / fac - zc) <= band]
+            if near:
+                yy = np.array([p["zyx"][1] / fac for p in near])
+                xx = np.array([p["zyx"][2] / fac for p in near])
+                sc = np.array([p["score"] for p in near])
+                im = ax.scatter(xx, yy, c=sc, cmap=div, norm=TwoSlopeNorm(0.0, -2.0, 1.5), s=46,
+                                edgecolor="white", linewidth=0.8, zorder=3)
+            if sd:
+                ax.scatter([sd["zyx"][2] / fac], [sd["zyx"][1] / fac], s=260, facecolor="none", edgecolor="white",
+                           linewidth=2.2, zorder=4)
+                x, y, z = sd["zyx"][2], sd["zyx"][1], sd["zyx"][0]
+                ax.set_title(f"z = {z} (±{band * fac} voxels shown)\nwhite ring: seed x {x}, y {y}, z {z}", fontsize=9.5,
+                             loc="left")
+            m = cs.mask[zc]
+            if m.any():
+                rr, cc = np.nonzero(m)
+                pad = 6
+                ax.set_xlim(max(0, cc.min() - pad), min(m.shape[1], cc.max() + pad))
+                ax.set_ylim(min(m.shape[0], rr.max() + pad), max(0, rr.min() - pad))
+            ax.set_xticks([])
+            ax.set_yticks([])
+            ax.grid(False)
+        fig.canvas.draw()  # put the title just above the panels' own titles, not at the top of the canvas
+        inv = fig.transFigure.inverted()
+        top = max(inv.transform(ax.get_tightbbox(fig.canvas.get_renderer()).corners())[:, 1].max() for ax in axs)
+        fig.suptitle(f"{s['scroll'].replace('PHerc', 'PHerc. ').replace('. 0', '. ')}: cross-sections through its best inner "
+                     f"seeds ({s['n_points']} points scored; blue = clean, red = crushed)",
+                     x=0.01, y=top + 0.03, ha="left", va="bottom", fontweight="bold", fontsize=11)
+        cb = fig.colorbar(im, ax=axs.tolist(), shrink=0.7, pad=0.01)
+        cb.set_label("scout score", color=INK2)
+        fig.savefig(out / f"fig_detail_{s['scroll']}.png", dpi=120, bbox_inches="tight")
+        plt.close(fig)
 
 
 def load_atlas(atlas: Path):
@@ -266,6 +434,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--results", default="results")
     ap.add_argument("--atlas", default="atlas")
+    ap.add_argument("--dense", default="atlas_dense")
     ap.add_argument("--out", default="figures")
     a = ap.parse_args()
     style()
@@ -274,7 +443,11 @@ def main():
     fig_validation(Path(a.results), out)
     fig_examples(Path(a.results), out)
     fig_text_regions(Path(a.results), out)
+    fig_team_segments(Path(a.results), out)
+    fig_segment_check(Path(a.results), out)
+    fig_census(Path(a.results), out)
     fig_atlas(Path(a.atlas), out)
+    fig_scroll_details(Path(a.dense), out)
     print("figures in", out)
 
 
