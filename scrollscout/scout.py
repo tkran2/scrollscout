@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import time
 from concurrent.futures import ProcessPoolExecutor
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
@@ -16,13 +17,30 @@ from .zarrhttp import ZArray
 
 LEVEL = 1
 HALF = 96
+VALIDATED_UM = (7.5, 10.0)  # the score was built and tested on 8.64 um and 9.36 um scans
+
+
+def validated_scan(vol: Volume) -> bool:
+    return VALIDATED_UM[0] <= float(vol.voxel_um) <= VALIDATED_UM[1]
+
+
+@lru_cache(maxsize=64)
+def prediction_offset(ct_url: str, pred_url: str) -> int:
+    """k such that the prediction's level 0 lies on the CT's level-k grid (0 for most volumes; some
+    predictions were computed on a downsampled CT, e.g. ``-L2-`` ones)."""
+    ct0, pr0 = ZArray.open(ct_url, 0).shape, ZArray.open(pred_url, 0).shape
+    return max(0, int(round(np.log2(ct0[0] / pr0[0]))))
 
 
 def features_at(vol: Volume, zyx0, level: int = LEVEL, half: int = HALF) -> dict:
     f = 2**level
     center = [v / f for v in zyx0]
+    k = prediction_offset(vol.ct, vol.surface)
+    if k > level:
+        raise ValueError(f"the surface prediction is stored {2 ** k}x coarser than the CT, too coarse to compare "
+                         f"at pyramid level {level}")
     ct = ZArray.open(vol.ct, level).read_centered(center, half)
-    pred = ZArray.open(vol.surface, level).read_centered(center, half)
+    pred = ZArray.open(vol.surface, level - k).read_centered(center, half)  # same grid as CT level `level`
     out = {}
     out.update(ct_features(ct))
     out.update(prediction_features(pred, ct > 0))
