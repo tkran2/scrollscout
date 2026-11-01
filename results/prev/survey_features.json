@@ -1,0 +1,1887 @@
+[
+ {
+  "scroll": "PHerc0175A",
+  "volume": "20250521115057",
+  "pass": "v1",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   5088,
+   7264,
+   2192
+  ],
+  "r_frac": 0.637,
+  "area_cm2": 12.15,
+  "verdict": "on the sheet in the centre (diagonal fiber crosshatch), swirls at edges",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0175A_v1_s1.tifxyz",
+  "features": {
+   "ct_valid": 0.9288681877983941,
+   "ct_planarity": 0.755942165851593,
+   "ct_dispersion": 0.07403713464736938,
+   "ct_contrast": 0.563117043236426,
+   "pred_frac": 0.2784708928917738,
+   "pred_planarity": 0.9047482013702393,
+   "pred_dispersion": 0.07536047697067261,
+   "pred_thick": 0.05923808743840683,
+   "pred_bigcc": 0.9730215797878875,
+   "pred_ncomp_per_kvox": 0.6229611127035475
+  },
+  "secs": 18.0
+ },
+ {
+  "scroll": "PHerc0175B",
+  "volume": "20250521125822",
+  "pass": "v1",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   6352,
+   6256,
+   3216
+  ],
+  "r_frac": 0.609,
+  "area_cm2": 14.14,
+  "verdict": "on-sheet band across the middle, swirls elsewhere",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0175B_v1_s1.tifxyz",
+  "features": {
+   "ct_valid": 0.9999994348596644,
+   "ct_planarity": 0.6482928395271301,
+   "ct_dispersion": 0.13865798711776733,
+   "ct_contrast": 0.2501429906802065,
+   "pred_frac": 0.263090070422177,
+   "pred_planarity": 0.9331883192062378,
+   "pred_dispersion": 0.06550556421279907,
+   "pred_thick": 0.01047192958996757,
+   "pred_bigcc": 0.9770079387966732,
+   "pred_ncomp_per_kvox": 0.5826689028264006
+  },
+  "secs": 18.1
+ },
+ {
+  "scroll": "PHerc0125",
+  "volume": "20250821151825",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   8336,
+   4416,
+   5280
+  ],
+  "r_frac": 0.383,
+  "area_cm2": 14.19,
+  "verdict": "partly on the sheet, crease across",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0125_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999995761447482,
+   "ct_planarity": 0.6288497447967529,
+   "ct_dispersion": 0.10552781820297241,
+   "ct_contrast": 0.1239788116102173,
+   "pred_frac": 0.24181644657973392,
+   "pred_planarity": 0.9686151742935181,
+   "pred_dispersion": 0.0704343318939209,
+   "pred_thick": 0.000549209459723958,
+   "pred_bigcc": 0.967239655727466,
+   "pred_ncomp_per_kvox": 0.3155033066499333
+  },
+  "secs": 17.9
+ },
+ {
+  "scroll": "PHerc0175A",
+  "volume": "20250521115057",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   5087,
+   5918,
+   5695
+  ],
+  "r_frac": 0.378,
+  "area_cm2": 13.45,
+  "verdict": "partly on the sheet, layer-crossing swirls",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0175A_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999997174298322,
+   "ct_planarity": 0.8618527054786682,
+   "ct_dispersion": 0.10888314247131348,
+   "ct_contrast": 0.14251563888627253,
+   "pred_frac": 0.22392689003467986,
+   "pred_planarity": 0.9757502675056458,
+   "pred_dispersion": 0.10867339372634888,
+   "pred_thick": 0.0011293881303200332,
+   "pred_bigcc": 0.9638046877809668,
+   "pred_ncomp_per_kvox": 0.48961183750186915
+  },
+  "secs": 18.1
+ },
+ {
+  "scroll": "PHerc0175B",
+  "volume": "20250521125822",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   6352,
+   4992,
+   6352
+  ],
+  "r_frac": 0.339,
+  "area_cm2": 15.43,
+  "verdict": "layer-crossing swirls",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0175B_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.6656330823898315,
+   "ct_dispersion": 0.4495469331741333,
+   "ct_contrast": 0.1586993750207423,
+   "pred_frac": 0.3072745711715133,
+   "pred_planarity": 0.7045318484306335,
+   "pred_dispersion": 0.2734505534172058,
+   "pred_thick": 0.11376804430640204,
+   "pred_bigcc": 0.9897298900386463,
+   "pred_ncomp_per_kvox": 0.9577650004253156
+  },
+  "secs": 18.0
+ },
+ {
+  "scroll": "PHerc0191",
+  "volume": "20250821151635",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   7584,
+   4699,
+   5372
+  ],
+  "r_frac": 0.388,
+  "area_cm2": 16.18,
+  "verdict": "swirls, small on-sheet core",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0191_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7751836180686951,
+   "ct_dispersion": 0.11782068014144897,
+   "ct_contrast": 0.5167512283469896,
+   "pred_frac": 0.25591984501591436,
+   "pred_planarity": 0.9327247738838196,
+   "pred_dispersion": 0.07068479061126709,
+   "pred_thick": 0.011371490781573304,
+   "pred_bigcc": 0.969607016118169,
+   "pred_ncomp_per_kvox": 0.526672599554371
+  },
+  "secs": 17.7
+ },
+ {
+  "scroll": "PHerc0211",
+  "volume": "20250821151803",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   7759,
+   4079,
+   4417
+  ],
+  "r_frac": 0.358,
+  "area_cm2": 14.27,
+  "verdict": "on-sheet core, swirls at edges",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0211_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7488868236541748,
+   "ct_dispersion": 0.01508176326751709,
+   "ct_contrast": 0.23506662397976935,
+   "pred_frac": 0.2373411390516493,
+   "pred_planarity": 0.9525249004364014,
+   "pred_dispersion": 0.0139504075050354,
+   "pred_thick": 0.0021358744763000084,
+   "pred_bigcc": 0.9802193497845672,
+   "pred_ncomp_per_kvox": 0.5345639018164458
+  },
+  "secs": 16.5
+ },
+ {
+  "scroll": "PHerc0257",
+  "volume": "20250821151750",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   7551,
+   4317,
+   5120
+  ],
+  "r_frac": 0.329,
+  "area_cm2": 16.93,
+  "verdict": "radial swirls (compressed region)",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0257_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999995761447482,
+   "ct_planarity": 0.5624850988388062,
+   "ct_dispersion": 0.3013554811477661,
+   "ct_contrast": 0.19656868268262714,
+   "pred_frac": 0.3044351525914874,
+   "pred_planarity": 0.6024084687232971,
+   "pred_dispersion": 0.23089516162872314,
+   "pred_thick": 0.09365882092505094,
+   "pred_bigcc": 0.9934015761406042,
+   "pred_ncomp_per_kvox": 1.1105660638299353
+  },
+  "secs": 17.6
+ },
+ {
+  "scroll": "PHerc0268",
+  "volume": "20251110183117",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   5936,
+   6608,
+   7936
+  ],
+  "r_frac": 0.364,
+  "area_cm2": 14.64,
+  "verdict": "swirls and gaps",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0268_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.5690461993217468,
+   "ct_dispersion": 0.22683298587799072,
+   "ct_contrast": 0.20083330080803016,
+   "pred_frac": 0.32246290453633975,
+   "pred_planarity": 0.6771096587181091,
+   "pred_dispersion": 0.23364192247390747,
+   "pred_thick": 0.20720781508230968,
+   "pred_bigcc": 0.9939378431760865,
+   "pred_ncomp_per_kvox": 1.02525635790385
+  },
+  "secs": 13.8
+ },
+ {
+  "scroll": "PHerc0306B",
+  "volume": "20250521133212",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   6352,
+   4544,
+   5590
+  ],
+  "r_frac": 0.347,
+  "area_cm2": 14.64,
+  "verdict": "radial swirls",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0306B_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7239968776702881,
+   "ct_dispersion": 0.047388672828674316,
+   "ct_contrast": 0.17210473921016037,
+   "pred_frac": 0.28951842696578417,
+   "pred_planarity": 0.6690490245819092,
+   "pred_dispersion": 0.11066776514053345,
+   "pred_thick": 0.09290013219928567,
+   "pred_bigcc": 0.9925950832016139,
+   "pred_ncomp_per_kvox": 1.1204487260507745
+  },
+  "secs": 17.5
+ },
+ {
+  "scroll": "PHerc0343",
+  "volume": "20250521140437",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   7199,
+   5181,
+   5856
+  ],
+  "r_frac": 0.348,
+  "area_cm2": 14.72,
+  "verdict": "partly on the sheet, swirls",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0343_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999994348596644,
+   "ct_planarity": 0.6780439615249634,
+   "ct_dispersion": 0.47677409648895264,
+   "ct_contrast": 0.15547858839627418,
+   "pred_frac": 0.2934388300232103,
+   "pred_planarity": 0.7742564678192139,
+   "pred_dispersion": 0.10717970132827759,
+   "pred_thick": 0.08728669196687797,
+   "pred_bigcc": 0.9962651534045989,
+   "pred_ncomp_per_kvox": 0.7178878785281709
+  },
+  "secs": 17.6
+ },
+ {
+  "scroll": "PHerc0358",
+  "volume": "20250821151737",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5888,
+   4112,
+   5200
+  ],
+  "r_frac": 0.353,
+  "area_cm2": 15.73,
+  "verdict": "partly on the sheet, swirls",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0358_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7648022770881653,
+   "ct_dispersion": 0.025505006313323975,
+   "ct_contrast": 0.1463525684095301,
+   "pred_frac": 0.2819417317708333,
+   "pred_planarity": 0.8161364793777466,
+   "pred_dispersion": 0.03514981269836426,
+   "pred_thick": 0.039939325058931066,
+   "pred_bigcc": 0.9919836716858292,
+   "pred_ncomp_per_kvox": 0.7030636134763715
+  },
+  "secs": 17.5
+ },
+ {
+  "scroll": "PHerc0483A",
+  "volume": "20250521140913",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   6352,
+   4656,
+   5632
+  ],
+  "r_frac": 0.34,
+  "area_cm2": 13.06,
+  "verdict": "partly on the sheet, swirls",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0483A_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.6174564957618713,
+   "ct_dispersion": 0.136641263961792,
+   "ct_contrast": 0.19719363370181306,
+   "pred_frac": 0.2592110810456453,
+   "pred_planarity": 0.924740195274353,
+   "pred_dispersion": 0.08497565984725952,
+   "pred_thick": 0.009367912542167053,
+   "pred_bigcc": 0.980522350922538,
+   "pred_ncomp_per_kvox": 0.5554141432750467
+  },
+  "secs": 17.3
+ },
+ {
+  "scroll": "PHerc0483B",
+  "volume": "20251124083638",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   4752,
+   4753,
+   5104
+  ],
+  "r_frac": 0.342,
+  "area_cm2": 14.35,
+  "verdict": "radial swirls (layer-crossing near the core)",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0483B_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999995761447482,
+   "ct_planarity": 0.5486897826194763,
+   "ct_dispersion": 0.10359126329421997,
+   "ct_contrast": 0.31317028291404414,
+   "pred_frac": 0.3333285296384442,
+   "pred_planarity": 0.5332831740379333,
+   "pred_dispersion": 0.13105356693267822,
+   "pred_thick": 0.16402240869288418,
+   "pred_bigcc": 0.9933017217665008,
+   "pred_ncomp_per_kvox": 1.1054299584234568
+  },
+  "secs": 17.5
+ },
+ {
+  "scroll": "PHerc0490A",
+  "volume": "20250521151210",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   4672,
+   4479,
+   5744
+  ],
+  "r_frac": 0.36,
+  "area_cm2": 14.64,
+  "verdict": "radial swirls",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0490A_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999990110044126,
+   "ct_planarity": 0.7052894830703735,
+   "ct_dispersion": 0.22379803657531738,
+   "ct_contrast": 0.13905856719916299,
+   "pred_frac": 0.2963639823839932,
+   "pred_planarity": 0.8477810025215149,
+   "pred_dispersion": 0.20855790376663208,
+   "pred_thick": 0.03564830992676977,
+   "pred_bigcc": 0.9935794236450548,
+   "pred_ncomp_per_kvox": 0.613072556612674
+  },
+  "secs": 15.1
+ },
+ {
+  "scroll": "PHerc0490B",
+  "volume": "20250521151215",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   4256,
+   4656,
+   5408
+  ],
+  "r_frac": 0.361,
+  "area_cm2": 14.96,
+  "verdict": "swirls and dark gaps",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0490B_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7618727684020996,
+   "ct_dispersion": 0.5097787380218506,
+   "ct_contrast": 0.2736338500903671,
+   "pred_frac": 0.20071552417896413,
+   "pred_planarity": 0.8602766394615173,
+   "pred_dispersion": 0.5492371320724487,
+   "pred_thick": 0.025193539259011067,
+   "pred_bigcc": 0.9839713312713548,
+   "pred_ncomp_per_kvox": 1.2804070272454284
+  },
+  "secs": 17.3
+ },
+ {
+  "scroll": "PHerc0813",
+  "volume": "20250821151723",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   6804,
+   4795,
+   5311
+  ],
+  "r_frac": 0.35,
+  "area_cm2": 16.18,
+  "verdict": "on-sheet band across the middle, swirls around it",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0813_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7808367609977722,
+   "ct_dispersion": 0.07135874032974243,
+   "ct_contrast": 0.2278104137241695,
+   "pred_frac": 0.24848146791811343,
+   "pred_planarity": 0.9146846532821655,
+   "pred_dispersion": 0.01787668466567993,
+   "pred_thick": 0.00995039585517682,
+   "pred_bigcc": 0.9897971483871261,
+   "pred_ncomp_per_kvox": 0.8250299649063754
+  },
+  "secs": 17.7
+ },
+ {
+  "scroll": "PHerc0826",
+  "volume": "20250821151701",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   6768,
+   4593,
+   4686
+  ],
+  "r_frac": 0.323,
+  "area_cm2": 17.09,
+  "verdict": "swirls and gaps",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0826_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7654999494552612,
+   "ct_dispersion": 0.0760381817817688,
+   "ct_contrast": 0.1954627173929313,
+   "pred_frac": 0.2733750519929109,
+   "pred_planarity": 0.7893279790878296,
+   "pred_dispersion": 0.058043837547302246,
+   "pred_thick": 0.050873990525696695,
+   "pred_bigcc": 0.9927516308184636,
+   "pred_ncomp_per_kvox": 1.0460391603158377
+  },
+  "secs": 17.4
+ },
+ {
+  "scroll": "PHerc0846A",
+  "volume": "20250728152254",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5600,
+   4382,
+   4624
+  ],
+  "r_frac": 0.331,
+  "area_cm2": 15.31,
+  "verdict": "on the sheet in the centre (crosshatch), swirls around it",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0846A_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.7408686280250549,
+   "ct_dispersion": 0.1970071792602539,
+   "ct_contrast": 0.23547273598272664,
+   "pred_frac": 0.2519646046906372,
+   "pred_planarity": 0.8651696443557739,
+   "pred_dispersion": 0.18203747272491455,
+   "pred_thick": 0.019080093552849453,
+   "pred_bigcc": 0.989418950676161,
+   "pred_ncomp_per_kvox": 0.9784807138367266
+  },
+  "secs": 18.3
+ },
+ {
+  "scroll": "PHerc0846B",
+  "volume": "20250804142305",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5568,
+   4511,
+   4961
+  ],
+  "r_frac": 0.348,
+  "area_cm2": 15.98,
+  "verdict": "arcs along the layers with swirls around a compressed centre",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0846B_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999975981535735,
+   "ct_planarity": 0.7217589020729065,
+   "ct_dispersion": 0.1807793378829956,
+   "ct_contrast": 0.23104840825207287,
+   "pred_frac": 0.240555952489103,
+   "pred_planarity": 0.948713481426239,
+   "pred_dispersion": 0.14325672388076782,
+   "pred_thick": 0.00218485904428862,
+   "pred_bigcc": 0.9930759937437853,
+   "pred_ncomp_per_kvox": 0.4686875046619136
+  },
+  "secs": 18.2
+ },
+ {
+  "scroll": "PHerc1203",
+  "volume": "20250820131727",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   7584,
+   3936,
+   4160
+  ],
+  "r_frac": 0.33,
+  "area_cm2": 16.11,
+  "verdict": "on the sheet in one corner (crosshatch), swirls elsewhere",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc1203_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.7289215922355652,
+   "ct_dispersion": 0.27985501289367676,
+   "ct_contrast": 0.18627245185938102,
+   "pred_frac": 0.24629568118281628,
+   "pred_planarity": 0.9382219314575195,
+   "pred_dispersion": 0.21113580465316772,
+   "pred_thick": 0.004632718257189289,
+   "pred_bigcc": 0.9969470868542891,
+   "pred_ncomp_per_kvox": 0.5816711630497696
+  },
+  "secs": 17.8
+ },
+ {
+  "scroll": "PHerc1218",
+  "volume": "20250521120456",
+  "pass": "v2",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   9296,
+   4400,
+   4848
+  ],
+  "r_frac": 0.359,
+  "area_cm2": 13.32,
+  "verdict": "on-sheet half, swirls",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc1218_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999992935745804,
+   "ct_planarity": 0.7287501692771912,
+   "ct_dispersion": 0.14278995990753174,
+   "ct_contrast": 0.31175411580403567,
+   "pred_frac": 0.24590135214159375,
+   "pred_planarity": 0.9477595686912537,
+   "pred_dispersion": 0.12628883123397827,
+   "pred_thick": 0.004631526208830639,
+   "pred_bigcc": 0.9647128379057757,
+   "pred_ncomp_per_kvox": 0.46079692587547105
+  },
+  "secs": 16.8
+ },
+ {
+  "scroll": "PHerc1545",
+  "volume": "20250821151648",
+  "pass": "v2",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   8382,
+   3709,
+   4496
+  ],
+  "r_frac": 0.353,
+  "area_cm2": 17.37,
+  "verdict": "layer-crossing swirls and gaps",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc1545_v2_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999916641800491,
+   "ct_planarity": 0.7744276523590088,
+   "ct_dispersion": 0.4605875015258789,
+   "ct_contrast": 0.13572924580973997,
+   "pred_frac": 0.2162538823698623,
+   "pred_planarity": 0.9126721620559692,
+   "pred_dispersion": 0.4746285676956177,
+   "pred_thick": 0.010167815007572125,
+   "pred_bigcc": 0.9823449935777407,
+   "pred_ncomp_per_kvox": 0.663785905525495
+  },
+  "secs": 18.0
+ },
+ {
+  "scroll": "PHerc0125",
+  "volume": "20250821151825",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   6240,
+   5184,
+   5392
+  ],
+  "r_frac": null,
+  "area_cm2": 13.74,
+  "verdict": "follows the sheet throughout (crosshatch, cracks)",
+  "label": 3,
+  "tifxyz": "results/segments/PHerc0125_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999997174298322,
+   "ct_planarity": 0.622276782989502,
+   "ct_dispersion": 0.22830665111541748,
+   "ct_contrast": 0.10226407555076392,
+   "pred_frac": 0.25857070882464056,
+   "pred_planarity": 0.9266625046730042,
+   "pred_dispersion": 0.15618211030960083,
+   "pred_thick": 0.004620968059204343,
+   "pred_bigcc": 0.9883992227900003,
+   "pred_ncomp_per_kvox": 0.41581609235597794
+  },
+  "secs": 18.0
+ },
+ {
+  "scroll": "PHerc0125",
+  "volume": "20250821151825",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   10433,
+   5502,
+   5712
+  ],
+  "r_frac": null,
+  "area_cm2": 14.56,
+  "verdict": "escapes the papyrus into uniform material in places",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0125_v3_s7.tifxyz",
+  "features": {
+   "ct_valid": 0.5832943386501737,
+   "ct_planarity": 0.6914140582084656,
+   "ct_dispersion": 0.24741017818450928,
+   "ct_contrast": 0.4712007239047817,
+   "pred_frac": 0.20851414996080894,
+   "pred_planarity": 0.8822699189186096,
+   "pred_dispersion": 0.1819092035293579,
+   "pred_thick": 0.06575859173674266,
+   "pred_bigcc": 0.9859944790840436,
+   "pred_ncomp_per_kvox": 0.5911119524230364
+  },
+  "secs": 14.5
+ },
+ {
+  "scroll": "PHerc0175A",
+  "volume": "20250521115057",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   3808,
+   6980,
+   5362
+  ],
+  "r_frac": null,
+  "area_cm2": 11.7,
+  "verdict": "follows the sheet over most of the patch (crosshatch), diagonal cracks",
+  "label": 2,
+  "tifxyz": "results/segments/PHerc0175A_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999995761447482,
+   "ct_planarity": 0.7994143962860107,
+   "ct_dispersion": 0.11729663610458374,
+   "ct_contrast": 0.16292702600012748,
+   "pred_frac": 0.24881415846683014,
+   "pred_planarity": 0.9613429307937622,
+   "pred_dispersion": 0.10108298063278198,
+   "pred_thick": 0.0036477636721578078,
+   "pred_bigcc": 0.986647958439116,
+   "pred_ncomp_per_kvox": 0.3883982490280107
+  },
+  "secs": 18.2
+ },
+ {
+  "scroll": "PHerc0175A",
+  "volume": "20250521115057",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   6367,
+   7151,
+   6112
+  ],
+  "r_frac": null,
+  "area_cm2": 11.72,
+  "verdict": "follows the sheet throughout (crosshatch)",
+  "label": 3,
+  "tifxyz": "results/segments/PHerc0175A_v3_s7.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.8402225971221924,
+   "ct_dispersion": 0.15819281339645386,
+   "ct_contrast": 0.20649858938818103,
+   "pred_frac": 0.22953231246383102,
+   "pred_planarity": 0.9713414907455444,
+   "pred_dispersion": 0.14755886793136597,
+   "pred_thick": 0.0011547429404334842,
+   "pred_bigcc": 0.9647981908206553,
+   "pred_ncomp_per_kvox": 0.3877868083545282
+  },
+  "secs": 14.5
+ },
+ {
+  "scroll": "PHerc0175B",
+  "volume": "20250521125822",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   4768,
+   5872,
+   6224
+  ],
+  "r_frac": null,
+  "area_cm2": 14.66,
+  "verdict": "radial layer-crossing swirls",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0175B_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.6378235816955566,
+   "ct_dispersion": 0.3234086036682129,
+   "ct_contrast": 0.2727203192903676,
+   "pred_frac": 0.31117884318033856,
+   "pred_planarity": 0.5920685529708862,
+   "pred_dispersion": 0.26647359132766724,
+   "pred_thick": 0.15334741739913343,
+   "pred_bigcc": 0.9921961017739476,
+   "pred_ncomp_per_kvox": 1.1141939868939186
+  },
+  "secs": 15.8
+ },
+ {
+  "scroll": "PHerc0175B",
+  "volume": "20250521125822",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   7936,
+   6608,
+   6944
+  ],
+  "r_frac": null,
+  "area_cm2": 15.16,
+  "verdict": "layer-crossing swirls, small on-sheet areas",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0175B_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.6777504086494446,
+   "ct_dispersion": 0.20760893821716309,
+   "ct_contrast": 0.4640374604585943,
+   "pred_frac": 0.30768938417787906,
+   "pred_planarity": 0.730294942855835,
+   "pred_dispersion": 0.15288656949996948,
+   "pred_thick": 0.1271513198465785,
+   "pred_bigcc": 0.9934116726536201,
+   "pred_ncomp_per_kvox": 0.8862191091798983
+  },
+  "secs": 16.9
+ },
+ {
+  "scroll": "PHerc0191",
+  "volume": "20250821151635",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5696,
+   5968,
+   5440
+  ],
+  "r_frac": null,
+  "area_cm2": 16.95,
+  "verdict": "swirls around folds, on-sheet crosshatch in the lower corners",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0191_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999946311668113,
+   "ct_planarity": 0.7629491686820984,
+   "ct_dispersion": 0.22474384307861328,
+   "ct_contrast": 0.4015826667356051,
+   "pred_frac": 0.2887417789300423,
+   "pred_planarity": 0.6641812324523926,
+   "pred_dispersion": 0.22790426015853882,
+   "pred_thick": 0.10953492161432556,
+   "pred_bigcc": 0.9937269930620152,
+   "pred_ncomp_per_kvox": 1.107317839365027
+  },
+  "secs": 16.3
+ },
+ {
+  "scroll": "PHerc0191",
+  "volume": "20250821151635",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   9504,
+   5437,
+   5517
+  ],
+  "r_frac": null,
+  "area_cm2": 17.52,
+  "verdict": "radial swirls and gaps (layer-crossing)",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0191_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.6759722232818604,
+   "ct_dispersion": 0.044071197509765625,
+   "ct_contrast": 0.47803098044339976,
+   "pred_frac": 0.3765881856282552,
+   "pred_planarity": 0.4948555529117584,
+   "pred_dispersion": 0.22344690561294556,
+   "pred_thick": 0.27013872709626036,
+   "pred_bigcc": 0.9957478083429846,
+   "pred_ncomp_per_kvox": 0.7867342425234922
+  },
+  "secs": 15.7
+ },
+ {
+  "scroll": "PHerc0211",
+  "volume": "20250821151803",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5821,
+   5106,
+   4611
+  ],
+  "r_frac": null,
+  "area_cm2": 14.69,
+  "verdict": "follows the sheet throughout (diagonal crosshatch)",
+  "label": 3,
+  "tifxyz": "results/segments/PHerc0211_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.4916301965713501,
+   "ct_dispersion": 0.04038059711456299,
+   "ct_contrast": 0.9973847132146313,
+   "pred_frac": 0.2721946151168258,
+   "pred_planarity": 0.8565987944602966,
+   "pred_dispersion": 0.014610707759857178,
+   "pred_thick": 0.04640647619621056,
+   "pred_bigcc": 0.9955610068292602,
+   "pred_ncomp_per_kvox": 0.5943226356989104
+  },
+  "secs": 18.6
+ },
+ {
+  "scroll": "PHerc0211",
+  "volume": "20250821151803",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   9701,
+   4845,
+   4706
+  ],
+  "r_frac": null,
+  "area_cm2": 13.95,
+  "verdict": "escapes the papyrus into uniform material over most of the patch",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0211_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.5159799081307871,
+   "ct_planarity": 0.7963278889656067,
+   "ct_dispersion": 0.06357204914093018,
+   "ct_contrast": 0.7158436170202924,
+   "pred_frac": 0.19117136466990575,
+   "pred_planarity": 0.9578679800033569,
+   "pred_dispersion": 0.09958279132843018,
+   "pred_thick": 0.1134466011600931,
+   "pred_bigcc": 0.9678131762100405,
+   "pred_ncomp_per_kvox": 0.29850783242439144
+  },
+  "secs": 13.4
+ },
+ {
+  "scroll": "PHerc0257",
+  "volume": "20250821151750",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5664,
+   5680,
+   5280
+  ],
+  "r_frac": null,
+  "area_cm2": 16.23,
+  "verdict": "radial layer-crossing swirls with some faint crosshatch",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0257_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.6447364091873169,
+   "ct_dispersion": 0.25063520669937134,
+   "ct_contrast": 0.15397789318445418,
+   "pred_frac": 0.27241219414605033,
+   "pred_planarity": 0.83514803647995,
+   "pred_dispersion": 0.08539164066314697,
+   "pred_thick": 0.026980923736958037,
+   "pred_bigcc": 0.9906877381550674,
+   "pred_ncomp_per_kvox": 0.5808818304831225
+  },
+  "secs": 16.9
+ },
+ {
+  "scroll": "PHerc0257",
+  "volume": "20250821151750",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   9440,
+   5328,
+   5360
+  ],
+  "r_frac": null,
+  "area_cm2": 15.96,
+  "verdict": "escapes the papyrus into uniform material and air over most of the patch",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0257_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.47894937020760997,
+   "ct_planarity": 0.672853410243988,
+   "ct_dispersion": 0.3080739974975586,
+   "ct_contrast": 0.6604604935653415,
+   "pred_frac": 0.13005029572707563,
+   "pred_planarity": 0.8202149271965027,
+   "pred_dispersion": 0.18607330322265625,
+   "pred_thick": 0.24949082474608567,
+   "pred_bigcc": 0.972029867126299,
+   "pred_ncomp_per_kvox": 0.8113139583031757
+  },
+  "secs": 14.0
+ },
+ {
+  "scroll": "PHerc0268",
+  "volume": "20251110183117",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   4452,
+   8016,
+   7900
+  ],
+  "r_frac": null,
+  "area_cm2": 14.97,
+  "verdict": "radial layer-crossing swirls (compressed region)",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0268_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.5141801834106445,
+   "ct_dispersion": 0.15785807371139526,
+   "ct_contrast": 0.24007411177861293,
+   "pred_frac": 0.30947437992802374,
+   "pred_planarity": 0.5453827381134033,
+   "pred_dispersion": 0.10471940040588379,
+   "pred_thick": 0.1878726731113825,
+   "pred_bigcc": 0.9912455345423833,
+   "pred_ncomp_per_kvox": 1.2623121083807936
+  },
+  "secs": 14.6
+ },
+ {
+  "scroll": "PHerc0268",
+  "volume": "20251110183117",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   7424,
+   8401,
+   8560
+  ],
+  "r_frac": null,
+  "area_cm2": 15.67,
+  "verdict": "radial layer-crossing swirls (compressed region)",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0268_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.4570719003677368,
+   "ct_dispersion": 0.15585869550704956,
+   "ct_contrast": 0.22835849841166017,
+   "pred_frac": 0.3063187775788484,
+   "pred_planarity": 0.4834890365600586,
+   "pred_dispersion": 0.09225958585739136,
+   "pred_thick": 0.1874876042968696,
+   "pred_bigcc": 0.9844208496879742,
+   "pred_ncomp_per_kvox": 1.4349035326024289
+  },
+  "secs": 15.4
+ },
+ {
+  "scroll": "PHerc0306B",
+  "volume": "20250521133212",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   4768,
+   5472,
+   5504
+  ],
+  "r_frac": null,
+  "area_cm2": 14.64,
+  "verdict": "radial layer-crossing swirls, small on-sheet areas",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0306B_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.6820737719535828,
+   "ct_dispersion": 0.16418397426605225,
+   "ct_contrast": 0.17385550149142787,
+   "pred_frac": 0.29277819778699493,
+   "pred_planarity": 0.7316474914550781,
+   "pred_dispersion": 0.1517208218574524,
+   "pred_thick": 0.07800792471568357,
+   "pred_bigcc": 0.9934674901833803,
+   "pred_ncomp_per_kvox": 0.8695857789428018
+  },
+  "secs": 17.4
+ },
+ {
+  "scroll": "PHerc0306B",
+  "volume": "20250521133212",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   7935,
+   5887,
+   6032
+  ],
+  "r_frac": null,
+  "area_cm2": 11.93,
+  "verdict": "follows the sheet throughout (crosshatch, cracks)",
+  "label": 3,
+  "tifxyz": "results/segments/PHerc0306B_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.644592821598053,
+   "ct_dispersion": 0.014538764953613281,
+   "ct_contrast": 0.1564629597627214,
+   "pred_frac": 0.2549479809440303,
+   "pred_planarity": 0.9717666506767273,
+   "pred_dispersion": 0.011326849460601807,
+   "pred_thick": 0.0008534253111538809,
+   "pred_bigcc": 0.969763252060274,
+   "pred_ncomp_per_kvox": 0.3131073381830797
+  },
+  "secs": 14.8
+ },
+ {
+  "scroll": "PHerc0343",
+  "volume": "20250521140437",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   5376,
+   5743,
+   5933
+  ],
+  "r_frac": null,
+  "area_cm2": 14.02,
+  "verdict": "swirls through the middle, on-sheet crosshatch in the corners",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0343_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7537381649017334,
+   "ct_dispersion": 0.23219811916351318,
+   "ct_contrast": 0.21007738076149096,
+   "pred_frac": 0.26441220883969907,
+   "pred_planarity": 0.8840394020080566,
+   "pred_dispersion": 0.20172417163848877,
+   "pred_thick": 0.02999497723726676,
+   "pred_bigcc": 0.9955890525145874,
+   "pred_ncomp_per_kvox": 0.5781520507833372
+  },
+  "secs": 17.3
+ },
+ {
+  "scroll": "PHerc0343",
+  "volume": "20250521140437",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   8992,
+   6349,
+   6431
+  ],
+  "r_frac": null,
+  "area_cm2": 12.63,
+  "verdict": "follows the sheet over most of the patch (crosshatch); one corner reaches air and uniform material",
+  "label": 2,
+  "tifxyz": "results/segments/PHerc0343_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.9999990110044126,
+   "ct_planarity": 0.7882890701293945,
+   "ct_dispersion": 0.1407068371772766,
+   "ct_contrast": 0.19633414627071602,
+   "pred_frac": 0.2593574263257605,
+   "pred_planarity": 0.9580246806144714,
+   "pred_dispersion": 0.10854512453079224,
+   "pred_thick": 0.004105786233277515,
+   "pred_bigcc": 0.9908977600939586,
+   "pred_ncomp_per_kvox": 0.23751131719636412
+  },
+  "secs": 18.1
+ },
+ {
+  "scroll": "PHerc0358",
+  "volume": "20250821151737",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   4416,
+   5008,
+   4768
+  ],
+  "r_frac": null,
+  "area_cm2": 16.0,
+  "verdict": "on-sheet crosshatch in places, swirls and a dark fold",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0358_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999927944607205,
+   "ct_planarity": 0.8784221410751343,
+   "ct_dispersion": 0.27438580989837646,
+   "ct_contrast": 0.33236618307298066,
+   "pred_frac": 0.21318052393690332,
+   "pred_planarity": 0.9536647796630859,
+   "pred_dispersion": 0.24310451745986938,
+   "pred_thick": 0.007001284408290729,
+   "pred_bigcc": 0.9533006907173996,
+   "pred_ncomp_per_kvox": 0.49176003700792514
+  },
+  "secs": 18.2
+ },
+ {
+  "scroll": "PHerc0358",
+  "volume": "20250821151737",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   7360,
+   5600,
+   5600
+  ],
+  "r_frac": null,
+  "area_cm2": 17.06,
+  "verdict": "radial layer-crossing swirls",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0358_v3_s7.tifxyz",
+  "features": {
+   "ct_valid": 0.9997870833785446,
+   "ct_planarity": 0.8116922378540039,
+   "ct_dispersion": 0.39356136322021484,
+   "ct_contrast": 0.2678715202011217,
+   "pred_frac": 0.26028898104836357,
+   "pred_planarity": 0.8210485577583313,
+   "pred_dispersion": 0.14798301458358765,
+   "pred_thick": 0.044723236736165094,
+   "pred_bigcc": 0.9755541345122444,
+   "pred_ncomp_per_kvox": 0.6438122369923871
+  },
+  "secs": 18.2
+ },
+ {
+  "scroll": "PHerc0483A",
+  "volume": "20250521140913",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   4768,
+   5552,
+   5216
+  ],
+  "r_frac": null,
+  "area_cm2": 12.84,
+  "verdict": "follows the sheet over most of the patch (crosshatch), swirls in one corner",
+  "label": 2,
+  "tifxyz": "results/segments/PHerc0483A_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999988697193287,
+   "ct_planarity": 0.7608619928359985,
+   "ct_dispersion": 0.3042125701904297,
+   "ct_contrast": 0.13641854121367886,
+   "pred_frac": 0.2136717491678299,
+   "pred_planarity": 0.9390018582344055,
+   "pred_dispersion": 0.2203032374382019,
+   "pred_thick": 0.007974381472985957,
+   "pred_bigcc": 0.9819690374471929,
+   "pred_ncomp_per_kvox": 0.4357477106714548
+  },
+  "secs": 18.7
+ },
+ {
+  "scroll": "PHerc0483A",
+  "volume": "20250521140913",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   7935,
+   4579,
+   2608
+  ],
+  "r_frac": null,
+  "area_cm2": 13.02,
+  "verdict": "on the sheet over most of the patch (diagonal crosshatch), swirls in one corner",
+  "label": 2,
+  "tifxyz": "results/segments/PHerc0483A_v3_s8.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.49645909667015076,
+   "ct_dispersion": 0.05872112512588501,
+   "ct_contrast": 0.13576752586927682,
+   "pred_frac": 0.2746765701859086,
+   "pred_planarity": 0.9434754848480225,
+   "pred_dispersion": 0.03348433971405029,
+   "pred_thick": 0.007239227829414699,
+   "pred_bigcc": 0.996235848425774,
+   "pred_ncomp_per_kvox": 0.3358828884899672
+  },
+  "secs": 17.6
+ },
+ {
+  "scroll": "PHerc0483B",
+  "volume": "20251124083638",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   3552,
+   5808,
+   5360
+  ],
+  "r_frac": null,
+  "area_cm2": 13.12,
+  "verdict": "on the sheet in the upper half (crosshatch), swirls below, a mesh hole in one corner",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0483B_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999997174298322,
+   "ct_planarity": 0.6252530813217163,
+   "ct_dispersion": 0.20486295223236084,
+   "ct_contrast": 0.1991940049971266,
+   "pred_frac": 0.2708170207884106,
+   "pred_planarity": 0.8988081216812134,
+   "pred_dispersion": 0.13802653551101685,
+   "pred_thick": 0.014725492119206266,
+   "pred_bigcc": 0.9891476055033045,
+   "pred_ncomp_per_kvox": 0.6349083791211658
+  },
+  "secs": 17.6
+ },
+ {
+  "scroll": "PHerc0483B",
+  "volume": "20251124083638",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   5952,
+   6240,
+   5761
+  ],
+  "r_frac": null,
+  "area_cm2": 14.67,
+  "verdict": "radial layer-crossing swirls",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0483B_v3_s8.tifxyz",
+  "features": {
+   "ct_valid": 0.9999956201623987,
+   "ct_planarity": 0.6180534362792969,
+   "ct_dispersion": 0.2123149037361145,
+   "ct_contrast": 0.1464775814746485,
+   "pred_frac": 0.3106397882862002,
+   "pred_planarity": 0.6892142295837402,
+   "pred_dispersion": 0.11448025703430176,
+   "pred_thick": 0.10738163764308638,
+   "pred_bigcc": 0.9949255732551285,
+   "pred_ncomp_per_kvox": 0.8891731008536061
+  },
+  "secs": 17.4
+ },
+ {
+  "scroll": "PHerc0490A",
+  "volume": "20250521151210",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   3483,
+   5669,
+   5715
+  ],
+  "r_frac": null,
+  "area_cm2": 15.04,
+  "verdict": "radial layer-crossing swirls with mesh holes",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0490A_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.5287100076675415,
+   "ct_dispersion": 0.290399432182312,
+   "ct_contrast": 0.1746627767734103,
+   "pred_frac": 0.32673461348922167,
+   "pred_planarity": 0.6445443630218506,
+   "pred_dispersion": 0.060543715953826904,
+   "pred_thick": 0.13801402842093566,
+   "pred_bigcc": 0.9945372960458637,
+   "pred_ncomp_per_kvox": 0.836723830543317
+  },
+  "secs": 17.5
+ },
+ {
+  "scroll": "PHerc0490A",
+  "volume": "20250521151210",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   5856,
+   5856,
+   6032
+  ],
+  "r_frac": null,
+  "area_cm2": 14.24,
+  "verdict": "swirls and mesh holes, on-sheet crosshatch in the centre",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0490A_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.9324605023419416,
+   "ct_planarity": 0.7599034309387207,
+   "ct_dispersion": 0.23442590236663818,
+   "ct_contrast": 0.5115629222978912,
+   "pred_frac": 0.25373951624059393,
+   "pred_planarity": 0.8760977983474731,
+   "pred_dispersion": 0.13809484243392944,
+   "pred_thick": 0.0527932887696713,
+   "pred_bigcc": 0.9381047897201827,
+   "pred_ncomp_per_kvox": 0.5967496795894934
+  },
+  "secs": 16.1
+ },
+ {
+  "scroll": "PHerc0490B",
+  "volume": "20250521151215",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   3166,
+   5439,
+   5407
+  ],
+  "r_frac": null,
+  "area_cm2": 14.03,
+  "verdict": "crosshatch on the upper left, radial layer-crossing swirls elsewhere, mesh holes on the right",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0490B_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999995761447482,
+   "ct_planarity": 0.5792226195335388,
+   "ct_dispersion": 0.36198294162750244,
+   "ct_contrast": 0.12141777633839321,
+   "pred_frac": 0.27746565534760737,
+   "pred_planarity": 0.8581104278564453,
+   "pred_dispersion": 0.1769084334373474,
+   "pred_thick": 0.02153961311084746,
+   "pred_bigcc": 0.9945154210818435,
+   "pred_ncomp_per_kvox": 0.7154241370355472
+  },
+  "secs": 17.3
+ },
+ {
+  "scroll": "PHerc0490B",
+  "volume": "20250521151215",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   5312,
+   5809,
+   5760
+  ],
+  "r_frac": null,
+  "area_cm2": 14.62,
+  "verdict": "on-sheet crosshatch in the upper half, swirls and folds below",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0490B_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.5167477130889893,
+   "ct_dispersion": 0.2391979694366455,
+   "ct_contrast": 0.08734813184542815,
+   "pred_frac": 0.3148259763364439,
+   "pred_planarity": 0.8293675184249878,
+   "pred_dispersion": 0.1169658899307251,
+   "pred_thick": 0.06342943486590469,
+   "pred_bigcc": 0.9908638995684159,
+   "pred_ncomp_per_kvox": 0.6148176437405506
+  },
+  "secs": 17.3
+ },
+ {
+  "scroll": "PHerc0813",
+  "volume": "20250821151723",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5088,
+   5264,
+   5072
+  ],
+  "r_frac": null,
+  "area_cm2": 17.29,
+  "verdict": "radial layer-crossing swirls throughout",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0813_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 1.0,
+   "ct_planarity": 0.7998056411743164,
+   "ct_dispersion": 0.14382874965667725,
+   "ct_contrast": 0.2249987762043537,
+   "pred_frac": 0.31095109162507234,
+   "pred_planarity": 0.7330326437950134,
+   "pred_dispersion": 0.15754377841949463,
+   "pred_thick": 0.11918158079710951,
+   "pred_bigcc": 0.9955581343255439,
+   "pred_ncomp_per_kvox": 0.7651495290286554
+  },
+  "secs": 16.9
+ },
+ {
+  "scroll": "PHerc0813",
+  "volume": "20250821151723",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   8512,
+   5264,
+   6016
+  ],
+  "r_frac": null,
+  "area_cm2": 13.78,
+  "verdict": "follows the sheet throughout (diagonal crosshatch)",
+  "label": 3,
+  "tifxyz": "results/segments/PHerc0813_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.9952612982855903,
+   "ct_planarity": 0.7992429137229919,
+   "ct_dispersion": 0.031971633434295654,
+   "ct_contrast": 0.796540601122286,
+   "pred_frac": 0.22653920561562263,
+   "pred_planarity": 0.9699012041091919,
+   "pred_dispersion": 0.031817853450775146,
+   "pred_thick": 0.0024773784148537444,
+   "pred_bigcc": 0.9736905419782186,
+   "pred_ncomp_per_kvox": 0.321420113004545
+  },
+  "secs": 17.0
+ },
+ {
+  "scroll": "PHerc0826",
+  "volume": "20250821151701",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5056,
+   4928,
+   5040
+  ],
+  "r_frac": null,
+  "area_cm2": 17.09,
+  "verdict": "radial layer-crossing swirls throughout",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc0826_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999995761447482,
+   "ct_planarity": 0.7456551790237427,
+   "ct_dispersion": 0.408042311668396,
+   "ct_contrast": 0.1678540420942759,
+   "pred_frac": 0.2521818311543632,
+   "pred_planarity": 0.8048815727233887,
+   "pred_dispersion": 0.26273030042648315,
+   "pred_thick": 0.048530042046820154,
+   "pred_bigcc": 0.9859786040231607,
+   "pred_ncomp_per_kvox": 0.9160100060787209
+  },
+  "secs": 17.7
+ },
+ {
+  "scroll": "PHerc0826",
+  "volume": "20250821151701",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   8450,
+   4960,
+   1315
+  ],
+  "r_frac": null,
+  "area_cm2": 14.99,
+  "verdict": "follows the sheet on the right two-thirds (crosshatch), swirls on the left",
+  "label": 2,
+  "tifxyz": "results/segments/PHerc0826_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.9999978807237413,
+   "ct_planarity": 0.8964133262634277,
+   "ct_dispersion": 0.22072625160217285,
+   "ct_contrast": 0.25271989203978257,
+   "pred_frac": 0.15825135602178791,
+   "pred_planarity": 0.9675371646881104,
+   "pred_dispersion": 0.21329784393310547,
+   "pred_thick": 0.000824043868060131,
+   "pred_bigcc": 0.9662990163255322,
+   "pred_ncomp_per_kvox": 0.5526361368680619
+  },
+  "secs": 17.5
+ },
+ {
+  "scroll": "PHerc0846A",
+  "volume": "20250728152254",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   4194,
+   4867,
+   4642
+  ],
+  "r_frac": null,
+  "area_cm2": 15.74,
+  "verdict": "follows the sheet on the right half (crosshatch), swirls on the left",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0846A_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999997174298322,
+   "ct_planarity": 0.7572956681251526,
+   "ct_dispersion": 0.15216195583343506,
+   "ct_contrast": 0.2519709131947256,
+   "pred_frac": 0.25236193405771157,
+   "pred_planarity": 0.9218873977661133,
+   "pred_dispersion": 0.13783687353134155,
+   "pred_thick": 0.009180439471970772,
+   "pred_bigcc": 0.9959953845869614,
+   "pred_ncomp_per_kvox": 0.728366371083911
+  },
+  "secs": 17.7
+ },
+ {
+  "scroll": "PHerc0846A",
+  "volume": "20250728152254",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   7008,
+   4320,
+   1808
+  ],
+  "r_frac": null,
+  "area_cm2": 17.59,
+  "verdict": "radial layer-crossing swirls, some crosshatch near the centre",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0846A_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.9999992935745804,
+   "ct_planarity": 0.48971855640411377,
+   "ct_dispersion": 0.19246560335159302,
+   "ct_contrast": 0.381223267659639,
+   "pred_frac": 0.2864253336767505,
+   "pred_planarity": 0.7038062214851379,
+   "pred_dispersion": 0.051939964294433594,
+   "pred_thick": 0.07851630209057824,
+   "pred_bigcc": 0.9901701092001819,
+   "pred_ncomp_per_kvox": 1.1685573717768485
+  },
+  "secs": 17.8
+ },
+ {
+  "scroll": "PHerc0846B",
+  "volume": "20250804142305",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   4160,
+   4624,
+   1408
+  ],
+  "r_frac": null,
+  "area_cm2": 15.1,
+  "verdict": "follows the sheet over most of the patch (diagonal crosshatch, cracks), swirls at the edges",
+  "label": 2,
+  "tifxyz": "results/segments/PHerc0846B_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.9999169243706597,
+   "ct_planarity": 0.7021003365516663,
+   "ct_dispersion": 0.02753269672393799,
+   "ct_contrast": 0.4302669207850832,
+   "pred_frac": 0.29119975131759285,
+   "pred_planarity": 0.8774184584617615,
+   "pred_dispersion": 0.03609675168991089,
+   "pred_thick": 0.02770439523811603,
+   "pred_bigcc": 0.9949478850545602,
+   "pred_ncomp_per_kvox": 0.509432506742703
+  },
+  "secs": 17.8
+ },
+ {
+  "scroll": "PHerc0846B",
+  "volume": "20250804142305",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   6974,
+   4531,
+   995
+  ],
+  "r_frac": null,
+  "area_cm2": 16.76,
+  "verdict": "sheet with crosshatch and mesh holes on the upper left, swirls below",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc0846B_v3_s4.tifxyz",
+  "features": {
+   "ct_valid": 0.6055902551721644,
+   "ct_planarity": 0.6809424161911011,
+   "ct_dispersion": 0.03772252798080444,
+   "ct_contrast": 0.6896600743285585,
+   "pred_frac": 0.29335464153232393,
+   "pred_planarity": 0.7366328835487366,
+   "pred_dispersion": 0.07468736171722412,
+   "pred_thick": 0.15060745639435716,
+   "pred_bigcc": 0.9897183820414406,
+   "pred_ncomp_per_kvox": 0.8853615464315011
+  },
+  "secs": 16.2
+ },
+ {
+  "scroll": "PHerc1203",
+  "volume": "20250820131727",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   5690,
+   4508,
+   4047
+  ],
+  "r_frac": null,
+  "area_cm2": 16.87,
+  "verdict": "radial layer-crossing swirls throughout",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc1203_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.7302832007408142,
+   "ct_dispersion": 0.3965263366699219,
+   "ct_contrast": 0.1905372467316864,
+   "pred_frac": 0.2313717356606569,
+   "pred_planarity": 0.8725510239601135,
+   "pred_dispersion": 0.1889352798461914,
+   "pred_thick": 0.014000780399395953,
+   "pred_bigcc": 0.9929391563259676,
+   "pred_ncomp_per_kvox": 0.7700184963205817
+  },
+  "secs": 17.4
+ },
+ {
+  "scroll": "PHerc1203",
+  "volume": "20250820131727",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   9504,
+   4656,
+   4528
+  ],
+  "r_frac": null,
+  "area_cm2": 17.3,
+  "verdict": "swirls on the left; escapes into a void and uniform material at the centre and lower right; mesh holes",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc1203_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.6130640948260272,
+   "ct_planarity": 0.7085616588592529,
+   "ct_dispersion": 0.44979602098464966,
+   "ct_contrast": 0.6160328232429859,
+   "pred_frac": 0.08917452276330262,
+   "pred_planarity": 0.8764849901199341,
+   "pred_dispersion": 0.37090158462524414,
+   "pred_thick": 0.02346130957748003,
+   "pred_bigcc": 0.8958474486759701,
+   "pred_ncomp_per_kvox": 1.5843532875974764
+  },
+  "secs": 17.6
+ },
+ {
+  "scroll": "PHerc1218",
+  "volume": "20250521120456",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   6976,
+   5024,
+   4688
+  ],
+  "r_frac": null,
+  "area_cm2": 13.32,
+  "verdict": "follows the sheet on the left half (crosshatch), swirls on the right",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc1218_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.8189342617988586,
+   "ct_dispersion": 0.19052422046661377,
+   "ct_contrast": 0.31605667753625766,
+   "pred_frac": 0.2370119782923915,
+   "pred_planarity": 0.95876544713974,
+   "pred_dispersion": 0.1816290020942688,
+   "pred_thick": 0.004276489916210841,
+   "pred_bigcc": 0.9785132312475857,
+   "pred_ncomp_per_kvox": 0.2897092416055853
+  },
+  "secs": 18.5
+ },
+ {
+  "scroll": "PHerc1218",
+  "volume": "20250521120456",
+  "pass": "v3",
+  "voxel_um": 8.64,
+  "seed_zyx": [
+   11606,
+   4513,
+   1970
+  ],
+  "r_frac": null,
+  "area_cm2": 12.77,
+  "verdict": "follows the sheet over most of the patch (crosshatch), a diagonal crease through the centre, swirls lower middle",
+  "label": 2,
+  "tifxyz": "results/segments/PHerc1218_v3_s7.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.7049884796142578,
+   "ct_dispersion": 0.10198211669921875,
+   "ct_contrast": 0.1377860683032596,
+   "pred_frac": 0.24056332066335617,
+   "pred_planarity": 0.9550952911376953,
+   "pred_dispersion": 0.08306300640106201,
+   "pred_thick": 0.004148166419996711,
+   "pred_bigcc": 0.9832329034228393,
+   "pred_ncomp_per_kvox": 0.5814363239128902
+  },
+  "secs": 17.1
+ },
+ {
+  "scroll": "PHerc1545",
+  "volume": "20250821151648",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   6272,
+   4097,
+   4672
+  ],
+  "r_frac": null,
+  "area_cm2": 16.67,
+  "verdict": "radial layer-crossing swirls throughout",
+  "label": 0,
+  "tifxyz": "results/segments/PHerc1545_v3_s0.tifxyz",
+  "features": {
+   "ct_valid": 0.999999858714916,
+   "ct_planarity": 0.7267839312553406,
+   "ct_dispersion": 0.3418906331062317,
+   "ct_contrast": 0.3868777628643832,
+   "pred_frac": 0.22415023014636995,
+   "pred_planarity": 0.879157543182373,
+   "pred_dispersion": 0.3100590109825134,
+   "pred_thick": 0.018344038171836295,
+   "pred_bigcc": 0.991151017012184,
+   "pred_ncomp_per_kvox": 0.7941960655779037
+  },
+  "secs": 16.7
+ },
+ {
+  "scroll": "PHerc1545",
+  "volume": "20250821151648",
+  "pass": "v3",
+  "voxel_um": 9.362,
+  "seed_zyx": [
+   10496,
+   4380,
+   4690
+  ],
+  "r_frac": null,
+  "area_cm2": 15.54,
+  "verdict": "follows the sheet on the left half (crosshatch); escapes into a void and uniform material on the upper right (mesh holes)",
+  "label": 1,
+  "tifxyz": "results/segments/PHerc1545_v3_s9.tifxyz",
+  "features": {
+   "ct_valid": 0.8370936358416522,
+   "ct_planarity": 0.6120225787162781,
+   "ct_dispersion": 0.3147652745246887,
+   "ct_contrast": 0.36211641211166523,
+   "pred_frac": 0.21108297165078302,
+   "pred_planarity": 0.7841460704803467,
+   "pred_dispersion": 0.30035728216171265,
+   "pred_thick": 0.06933287502048419,
+   "pred_bigcc": 0.9810066628562749,
+   "pred_ncomp_per_kvox": 1.0703736715255823
+  },
+  "secs": 16.2
+ }
+]
