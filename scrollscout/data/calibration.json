@@ -1,0 +1,26 @@
+{
+ "pred_planarity": {
+  "mean": 0.8331615681831653,
+  "sd": 0.13045079060410594
+ },
+ "pred_dispersion": {
+  "mean": 0.15210577891423152,
+  "sd": 0.10230146450188707
+ },
+ "pred_thick": {
+  "mean": 0.05770490724001816,
+  "sd": 0.06549184900330664
+ },
+ "pred_ncomp_per_kvox": {
+  "mean": 0.7242458661495055,
+  "sd": 0.2960001192666843
+ },
+ "ct_dispersion": {
+  "mean": 0.20204128302060642,
+  "sd": 0.126712519897855
+ },
+ "_good_threshold": {
+  "value": 0.6277481354888668,
+  "rule": "25th percentile of v2 scores among survey patches that stayed on the sheet"
+ }
+}
