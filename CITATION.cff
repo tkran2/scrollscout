@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use Scroll Scout or its atlas, please cite it as below."
+title: "Scroll Scout: predicting where Herculaneum scroll papyrus can be traced, and checking traced segments, from public CT data"
+authors:
+  - alias: tkran2
+version: 0.2.0
+date-released: 2026-11-01
+license: MIT
+repository-code: "https://github.com/tkran2/scrollscout"
+keywords:
+  - Vesuvius Challenge
+  - Herculaneum papyri
+  - X-ray CT
+  - virtual unwrapping
