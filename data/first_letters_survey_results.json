@@ -1,0 +1,4826 @@
+{
+ "patches": [
+  {
+   "pass": "v1",
+   "scroll": "PHerc0175A",
+   "volume": "20250521115057",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 5088,
+    "y": 7264,
+    "x": 2192
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.6,
+    "angle": 2.4,
+    "r_frac_measured": 0.637
+   },
+   "area_cm2": 12.15,
+   "grow_s": null,
+   "visual_qa": {
+    "surface": "on the sheet in the centre (diagonal fiber crosshatch), swirls at edges",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 8.3 / rev 10.5: speckle, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.3,
+     "period_mm": 7.74,
+     "angle_deg": -45.0,
+     "mean_ink": 0.3868,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.3098,
+     "valid_px": 15363842
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 13.4,
+     "period_mm": 4.64,
+     "angle_deg": -81.9,
+     "mean_ink": 0.3767,
+     "p99": 0.998,
+     "frac_gt_0.5": 0.2918,
+     "valid_px": 15363842
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.7,
+     "period_mm": 7.34,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2942,
+     "p99": 0.849,
+     "frac_gt_0.5": 0.1318,
+     "valid_px": 15363842
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.0,
+     "period_mm": 4.55,
+     "angle_deg": -123.7,
+     "mean_ink": 0.2974,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.1368,
+     "valid_px": 15363842
+    }
+   },
+   "sheet": "results/sheets/v1_PHerc0175A_s1.jpg",
+   "tifxyz": "results/segments/PHerc0175A_v1_s1.tifxyz"
+  },
+  {
+   "pass": "v1",
+   "scroll": "PHerc0175B",
+   "volume": "20250521125822",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 6352,
+    "y": 6256,
+    "x": 3216
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.6,
+    "angle": 2.4,
+    "r_frac_measured": 0.609
+   },
+   "area_cm2": 14.14,
+   "grow_s": null,
+   "visual_qa": {
+    "surface": "on-sheet band across the middle, swirls elsewhere",
+    "ink": "speckle; one ~1 mm ring in both directions (not direction-specific); no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 10.7,
+     "period_mm": 7.96,
+     "angle_deg": -14.0,
+     "mean_ink": 0.2758,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1558,
+     "valid_px": 15354499
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.7,
+     "period_mm": 7.74,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2732,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1501,
+     "valid_px": 15354499
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.4,
+     "period_mm": 7.96,
+     "angle_deg": -14.0,
+     "mean_ink": 0.2394,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0823,
+     "valid_px": 15354499
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.1,
+     "period_mm": 3.67,
+     "angle_deg": -26.6,
+     "mean_ink": 0.2404,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0874,
+     "valid_px": 15354499
+    }
+   },
+   "sheet": "results/sheets/v1_PHerc0175B_s1.jpg",
+   "tifxyz": "results/segments/PHerc0175B_v1_s1.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0125",
+   "volume": "20250821151825",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 8336,
+    "y": 4416,
+    "x": 5280
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.383
+   },
+   "area_cm2": 14.19,
+   "grow_s": 2726,
+   "visual_qa": {
+    "surface": "partly on the sheet, crease across",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 9.8 / rev 9.5: speckle, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.9,
+     "period_mm": 2.73,
+     "angle_deg": -4.4,
+     "mean_ink": 0.3017,
+     "p99": 0.943,
+     "frac_gt_0.5": 0.1844,
+     "valid_px": 15366331
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 8.9,
+     "period_mm": 6.1,
+     "angle_deg": -31.0,
+     "mean_ink": 0.2878,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1626,
+     "valid_px": 15366331
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.3,
+     "period_mm": 7.95,
+     "angle_deg": -26.6,
+     "mean_ink": 0.249,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0846,
+     "valid_px": 15366331
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 6.5,
+     "period_mm": 3.29,
+     "angle_deg": -33.7,
+     "mean_ink": 0.2178,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0618,
+     "valid_px": 15366331
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0125_s0.jpg",
+   "tifxyz": "results/segments/PHerc0125_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0175A",
+   "volume": "20250521115057",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 5087,
+    "y": 5918,
+    "x": 5695
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.378
+   },
+   "area_cm2": 13.45,
+   "grow_s": 4277,
+   "visual_qa": {
+    "surface": "partly on the sheet, layer-crossing swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.9,
+     "period_mm": 3.22,
+     "angle_deg": -78.7,
+     "mean_ink": 0.2386,
+     "p99": 0.959,
+     "frac_gt_0.5": 0.1449,
+     "valid_px": 15366330
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.2,
+     "period_mm": 6.57,
+     "angle_deg": -126.9,
+     "mean_ink": 0.2242,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1257,
+     "valid_px": 15366330
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.7,
+     "period_mm": 7.34,
+     "angle_deg": -116.6,
+     "mean_ink": 0.2325,
+     "p99": 0.841,
+     "frac_gt_0.5": 0.0947,
+     "valid_px": 15366330
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 6.6,
+     "period_mm": 5.4,
+     "angle_deg": -99.5,
+     "mean_ink": 0.2126,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0667,
+     "valid_px": 15366330
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0175A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0175A_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0175B",
+   "volume": "20250521125822",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 6352,
+    "y": 4992,
+    "x": 6352
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.339
+   },
+   "area_cm2": 15.43,
+   "grow_s": 3563,
+   "visual_qa": {
+    "surface": "layer-crossing swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.5,
+     "period_mm": 4.2,
+     "angle_deg": -39.8,
+     "mean_ink": 0.213,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.092,
+     "valid_px": 15366391
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.8,
+     "period_mm": 7.74,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2104,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.0914,
+     "valid_px": 15366391
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.8,
+     "period_mm": 7.34,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2205,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0616,
+     "valid_px": 15366391
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 15.4,
+     "period_mm": 5.8,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2145,
+     "p99": 0.763,
+     "frac_gt_0.5": 0.0571,
+     "valid_px": 15366391
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0175B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0175B_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0191",
+   "volume": "20250821151635",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 7584,
+    "y": 4699,
+    "x": 5372
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.388
+   },
+   "area_cm2": 16.18,
+   "grow_s": 3016,
+   "visual_qa": {
+    "surface": "swirls, small on-sheet core",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 6.5,
+     "period_mm": 4.14,
+     "angle_deg": -54.5,
+     "mean_ink": 0.2286,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.1177,
+     "valid_px": 15366394
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 11.1,
+     "period_mm": 4.89,
+     "angle_deg": -15.9,
+     "mean_ink": 0.2273,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1138,
+     "valid_px": 15366394
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.4,
+     "period_mm": 5.3,
+     "angle_deg": -26.6,
+     "mean_ink": 0.2283,
+     "p99": 0.825,
+     "frac_gt_0.5": 0.0821,
+     "valid_px": 15366394
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.9,
+     "period_mm": 2.95,
+     "angle_deg": -131.6,
+     "mean_ink": 0.2368,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.0927,
+     "valid_px": 15366394
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0191_s0.jpg",
+   "tifxyz": "results/segments/PHerc0191_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0211",
+   "volume": "20250821151803",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 7759,
+    "y": 4079,
+    "x": 4417
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.358
+   },
+   "area_cm2": 14.27,
+   "grow_s": 2840,
+   "visual_qa": {
+    "surface": "on-sheet core, swirls at edges",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 14.6 (4.67 mm) / rev 6.2: forward shows short oblique strokes parallel to the fiber-gap channels of the render, not repeated in reverse; no rows, no letters (checked at full resolution)"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.8,
+     "period_mm": 4.67,
+     "angle_deg": -66.8,
+     "mean_ink": 0.3248,
+     "p99": 0.967,
+     "frac_gt_0.5": 0.2149,
+     "valid_px": 15366290
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.8,
+     "period_mm": 4.55,
+     "angle_deg": -39.8,
+     "mean_ink": 0.3281,
+     "p99": 0.967,
+     "frac_gt_0.5": 0.2178,
+     "valid_px": 15366290
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 6.8,
+     "period_mm": 3.3,
+     "angle_deg": -111.8,
+     "mean_ink": 0.2753,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.1233,
+     "valid_px": 15366290
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.1,
+     "period_mm": 4.19,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2671,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.1151,
+     "valid_px": 15366290
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0211_s0.jpg",
+   "tifxyz": "results/segments/PHerc0211_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0257",
+   "volume": "20250821151750",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 7551,
+    "y": 4317,
+    "x": 5120
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.329
+   },
+   "area_cm2": 16.93,
+   "grow_s": 2590,
+   "visual_qa": {
+    "surface": "radial swirls (compressed region)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 10.1,
+     "period_mm": 6.98,
+     "angle_deg": -78.7,
+     "mean_ink": 0.2512,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.1227,
+     "valid_px": 15366385
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.3,
+     "period_mm": 7.12,
+     "angle_deg": -143.1,
+     "mean_ink": 0.2563,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.13,
+     "valid_px": 15366385
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.9,
+     "period_mm": 6.98,
+     "angle_deg": -101.3,
+     "mean_ink": 0.2201,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0637,
+     "valid_px": 15366385
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.2,
+     "period_mm": 2.55,
+     "angle_deg": -21.0,
+     "mean_ink": 0.2169,
+     "p99": 0.755,
+     "frac_gt_0.5": 0.0598,
+     "valid_px": 15366385
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0257_s0.jpg",
+   "tifxyz": "results/segments/PHerc0257_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0268",
+   "volume": "20251110183117",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 5936,
+    "y": 6608,
+    "x": 7936
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.364
+   },
+   "area_cm2": 14.64,
+   "grow_s": 2312,
+   "visual_qa": {
+    "surface": "swirls and gaps",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.7,
+     "period_mm": 7.96,
+     "angle_deg": -166.0,
+     "mean_ink": 0.2829,
+     "p99": 0.951,
+     "frac_gt_0.5": 0.1612,
+     "valid_px": 15366399
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.4,
+     "period_mm": 2.88,
+     "angle_deg": -127.9,
+     "mean_ink": 0.2745,
+     "p99": 0.943,
+     "frac_gt_0.5": 0.1521,
+     "valid_px": 15366399
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 8.1,
+     "period_mm": 3.84,
+     "angle_deg": -69.4,
+     "mean_ink": 0.2219,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0603,
+     "valid_px": 15366399
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 5.5,
+     "period_mm": 3.63,
+     "angle_deg": -96.3,
+     "mean_ink": 0.216,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0579,
+     "valid_px": 15366399
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0268_s0.jpg",
+   "tifxyz": "results/segments/PHerc0268_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0306B",
+   "volume": "20250521133212",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 6352,
+    "y": 4544,
+    "x": 5590
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.347
+   },
+   "area_cm2": 14.64,
+   "grow_s": 2935,
+   "visual_qa": {
+    "surface": "radial swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.2,
+     "period_mm": 5.13,
+     "angle_deg": -141.3,
+     "mean_ink": 0.2422,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1228,
+     "valid_px": 15366349
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 6.1,
+     "period_mm": 4.2,
+     "angle_deg": -39.8,
+     "mean_ink": 0.2484,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1297,
+     "valid_px": 15366349
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 5.3,
+     "period_mm": 4.64,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2211,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0692,
+     "valid_px": 15366349
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 5.9,
+     "period_mm": 3.87,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2292,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0732,
+     "valid_px": 15366349
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0306B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0306B_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0343",
+   "volume": "20250521140437",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 7199,
+    "y": 5181,
+    "x": 5856
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.348
+   },
+   "area_cm2": 14.72,
+   "grow_s": 3957,
+   "visual_qa": {
+    "surface": "partly on the sheet, swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.0,
+     "period_mm": 7.34,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2521,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1284,
+     "valid_px": 15366361
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.0,
+     "period_mm": 7.74,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2428,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1187,
+     "valid_px": 15366361
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 8.2,
+     "period_mm": 5.8,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2364,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.0862,
+     "valid_px": 15366361
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.9,
+     "period_mm": 7.74,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2354,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.0804,
+     "valid_px": 15366361
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0343_s0.jpg",
+   "tifxyz": "results/segments/PHerc0343_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0358",
+   "volume": "20250821151737",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5888,
+    "y": 4112,
+    "x": 5200
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.353
+   },
+   "area_cm2": 15.73,
+   "grow_s": 2836,
+   "visual_qa": {
+    "surface": "partly on the sheet, swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.0,
+     "period_mm": 5.03,
+     "angle_deg": -171.9,
+     "mean_ink": 0.2102,
+     "p99": 0.849,
+     "frac_gt_0.5": 0.0905,
+     "valid_px": 15365955
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 10.2,
+     "period_mm": 4.55,
+     "angle_deg": -39.8,
+     "mean_ink": 0.2185,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.1021,
+     "valid_px": 15365955
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.6,
+     "period_mm": 6.29,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2492,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0909,
+     "valid_px": 15365955
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 15.0,
+     "period_mm": 4.67,
+     "angle_deg": -23.2,
+     "mean_ink": 0.2088,
+     "p99": 0.778,
+     "frac_gt_0.5": 0.0627,
+     "valid_px": 15365955
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0358_s0.jpg",
+   "tifxyz": "results/segments/PHerc0358_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0483A",
+   "volume": "20250521140913",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 6352,
+    "y": 4656,
+    "x": 5632
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.34
+   },
+   "area_cm2": 13.06,
+   "grow_s": 3210,
+   "visual_qa": {
+    "surface": "partly on the sheet, swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 5.2,
+     "period_mm": 4.31,
+     "angle_deg": -66.8,
+     "mean_ink": 0.2498,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1196,
+     "valid_px": 15366290
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 13.1,
+     "period_mm": 7.96,
+     "angle_deg": -14.0,
+     "mean_ink": 0.2446,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.113,
+     "valid_px": 15366290
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 15.4,
+     "period_mm": 5.4,
+     "angle_deg": -99.5,
+     "mean_ink": 0.206,
+     "p99": 0.747,
+     "frac_gt_0.5": 0.0563,
+     "valid_px": 15366290
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 4.5,
+     "period_mm": 3.19,
+     "angle_deg": -60.9,
+     "mean_ink": 0.1995,
+     "p99": 0.731,
+     "frac_gt_0.5": 0.0471,
+     "valid_px": 15366290
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0483A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0483A_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0483B",
+   "volume": "20251124083638",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 4752,
+    "y": 4753,
+    "x": 5104
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.342
+   },
+   "area_cm2": 14.35,
+   "grow_s": 2935,
+   "visual_qa": {
+    "surface": "radial swirls (layer-crossing near the core)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.9,
+     "period_mm": 3.63,
+     "angle_deg": -83.7,
+     "mean_ink": 0.2599,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1394,
+     "valid_px": 15366372
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.6,
+     "period_mm": 6.57,
+     "angle_deg": 180.0,
+     "mean_ink": 0.2575,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1337,
+     "valid_px": 15366372
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.9,
+     "period_mm": 6.57,
+     "angle_deg": -53.1,
+     "mean_ink": 0.2243,
+     "p99": 0.778,
+     "frac_gt_0.5": 0.0676,
+     "valid_px": 15366372
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 12.3,
+     "period_mm": 5.63,
+     "angle_deg": -149.0,
+     "mean_ink": 0.2168,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0584,
+     "valid_px": 15366372
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0483B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0483B_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0490A",
+   "volume": "20250521151210",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 4672,
+    "y": 4479,
+    "x": 5744
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.36
+   },
+   "area_cm2": 14.64,
+   "grow_s": 3414,
+   "visual_qa": {
+    "surface": "radial swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 6.6,
+     "period_mm": 3.82,
+     "angle_deg": -35.5,
+     "mean_ink": 0.2381,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1152,
+     "valid_px": 15366381
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.9,
+     "period_mm": 5.4,
+     "angle_deg": -170.5,
+     "mean_ink": 0.2444,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.1255,
+     "valid_px": 15366381
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 8.8,
+     "period_mm": 3.14,
+     "angle_deg": -16.7,
+     "mean_ink": 0.2259,
+     "p99": 0.778,
+     "frac_gt_0.5": 0.0732,
+     "valid_px": 15366381
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.0,
+     "period_mm": 2.7,
+     "angle_deg": -170.5,
+     "mean_ink": 0.2304,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0777,
+     "valid_px": 15366381
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0490A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0490A_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0490B",
+   "volume": "20250521151215",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 4256,
+    "y": 4656,
+    "x": 5408
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.361
+   },
+   "area_cm2": 14.96,
+   "grow_s": 3402,
+   "visual_qa": {
+    "surface": "swirls and dark gaps",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.2,
+     "period_mm": 5.63,
+     "angle_deg": -149.0,
+     "mean_ink": 0.2366,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1202,
+     "valid_px": 15366397
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 11.6,
+     "period_mm": 5.63,
+     "angle_deg": -149.0,
+     "mean_ink": 0.23,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.1106,
+     "valid_px": 15366397
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.0,
+     "period_mm": 4.69,
+     "angle_deg": 180.0,
+     "mean_ink": 0.2246,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.074,
+     "valid_px": 15366397
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.3,
+     "period_mm": 7.34,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2306,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0772,
+     "valid_px": 15366397
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0490B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0490B_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0813",
+   "volume": "20250821151723",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 6804,
+    "y": 4795,
+    "x": 5311
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.35
+   },
+   "area_cm2": 16.18,
+   "grow_s": 4079,
+   "visual_qa": {
+    "surface": "on-sheet band across the middle, swirls around it",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.2,
+     "period_mm": 2.67,
+     "angle_deg": -167.0,
+     "mean_ink": 0.2125,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1015,
+     "valid_px": 15366327
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 11.8,
+     "period_mm": 5.08,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2069,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1011,
+     "valid_px": 15366327
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.8,
+     "period_mm": 4.14,
+     "angle_deg": -125.5,
+     "mean_ink": 0.2285,
+     "p99": 0.794,
+     "frac_gt_0.5": 0.0771,
+     "valid_px": 15366327
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 11.0,
+     "period_mm": 4.89,
+     "angle_deg": -164.1,
+     "mean_ink": 0.218,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0748,
+     "valid_px": 15366327
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0813_s0.jpg",
+   "tifxyz": "results/segments/PHerc0813_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0826",
+   "volume": "20250821151701",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 6768,
+    "y": 4593,
+    "x": 4686
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.323
+   },
+   "area_cm2": 17.09,
+   "grow_s": 3659,
+   "visual_qa": {
+    "surface": "swirls and gaps",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 12.1,
+     "period_mm": 7.12,
+     "angle_deg": -143.1,
+     "mean_ink": 0.2206,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1179,
+     "valid_px": 15366235
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 14.9,
+     "period_mm": 7.12,
+     "angle_deg": -143.1,
+     "mean_ink": 0.2204,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.1162,
+     "valid_px": 15366235
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 8.5,
+     "period_mm": 6.29,
+     "angle_deg": -135.0,
+     "mean_ink": 0.216,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0806,
+     "valid_px": 15366235
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 22.5,
+     "period_mm": 7.95,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2106,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0723,
+     "valid_px": 15366235
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0826_s0.jpg",
+   "tifxyz": "results/segments/PHerc0826_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0846A",
+   "volume": "20250728152254",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5600,
+    "y": 4382,
+    "x": 4624
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.331
+   },
+   "area_cm2": 15.31,
+   "grow_s": 3896,
+   "visual_qa": {
+    "surface": "on the sheet in the centre (crosshatch), swirls around it",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 9.6 / rev 7.6: speckle in both directions, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 6.9,
+     "period_mm": 5.03,
+     "angle_deg": -81.9,
+     "mean_ink": 0.2957,
+     "p99": 0.959,
+     "frac_gt_0.5": 0.1955,
+     "valid_px": 15366308
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.5,
+     "period_mm": 5.56,
+     "angle_deg": -128.7,
+     "mean_ink": 0.2949,
+     "p99": 0.967,
+     "frac_gt_0.5": 0.1898,
+     "valid_px": 15366308
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.5,
+     "period_mm": 4.55,
+     "angle_deg": -39.8,
+     "mean_ink": 0.2693,
+     "p99": 0.865,
+     "frac_gt_0.5": 0.1306,
+     "valid_px": 15366308
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.4,
+     "period_mm": 3.95,
+     "angle_deg": 180.0,
+     "mean_ink": 0.2619,
+     "p99": 0.849,
+     "frac_gt_0.5": 0.1211,
+     "valid_px": 15366308
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0846A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0846A_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc0846B",
+   "volume": "20250804142305",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5568,
+    "y": 4511,
+    "x": 4961
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.348
+   },
+   "area_cm2": 15.98,
+   "grow_s": 3936,
+   "visual_qa": {
+    "surface": "arcs along the layers with swirls around a compressed centre",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.8,
+     "period_mm": 4.41,
+     "angle_deg": -172.9,
+     "mean_ink": 0.2875,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1581,
+     "valid_px": 15172260
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 19.2,
+     "period_mm": 4.41,
+     "angle_deg": -172.9,
+     "mean_ink": 0.2872,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1644,
+     "valid_px": 15172260
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 20.2,
+     "period_mm": 4.55,
+     "angle_deg": -129.8,
+     "mean_ink": 0.2552,
+     "p99": 0.849,
+     "frac_gt_0.5": 0.1049,
+     "valid_px": 15172260
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 11.3,
+     "period_mm": 7.12,
+     "angle_deg": -126.9,
+     "mean_ink": 0.2499,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.0994,
+     "valid_px": 15172260
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc0846B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0846B_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc1203",
+   "volume": "20250820131727",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 7584,
+    "y": 3936,
+    "x": 4160
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.33
+   },
+   "area_cm2": 16.11,
+   "grow_s": 3614,
+   "visual_qa": {
+    "surface": "on the sheet in one corner (crosshatch), swirls elsewhere",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 6.4,
+     "period_mm": 7.12,
+     "angle_deg": -143.1,
+     "mean_ink": 0.2552,
+     "p99": 0.943,
+     "frac_gt_0.5": 0.1503,
+     "valid_px": 15366382
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.1,
+     "period_mm": 2.95,
+     "angle_deg": -41.6,
+     "mean_ink": 0.2465,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1452,
+     "valid_px": 15366382
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 8.7,
+     "period_mm": 6.98,
+     "angle_deg": -168.7,
+     "mean_ink": 0.2293,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0894,
+     "valid_px": 15366382
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.3,
+     "period_mm": 7.12,
+     "angle_deg": -126.9,
+     "mean_ink": 0.244,
+     "p99": 0.841,
+     "frac_gt_0.5": 0.1024,
+     "valid_px": 15366382
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc1203_s0.jpg",
+   "tifxyz": "results/segments/PHerc1203_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc1218",
+   "volume": "20250521120456",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 9296,
+    "y": 4400,
+    "x": 4848
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.359
+   },
+   "area_cm2": 13.32,
+   "grow_s": 3651,
+   "visual_qa": {
+    "surface": "on-sheet half, swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 9.5 / rev 11.6: speckle and squiggles in both directions, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.1,
+     "period_mm": 2.53,
+     "angle_deg": -157.4,
+     "mean_ink": 0.2546,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1354,
+     "valid_px": 15366300
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.4,
+     "period_mm": 3.27,
+     "angle_deg": -84.3,
+     "mean_ink": 0.2473,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1248,
+     "valid_px": 15366300
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 6.5,
+     "period_mm": 7.96,
+     "angle_deg": -166.0,
+     "mean_ink": 0.2361,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0873,
+     "valid_px": 15366300
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 13.1,
+     "period_mm": 5.47,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2083,
+     "p99": 0.763,
+     "frac_gt_0.5": 0.0611,
+     "valid_px": 15366300
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc1218_s0.jpg",
+   "tifxyz": "results/segments/PHerc1218_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v2",
+   "scroll": "PHerc1545",
+   "volume": "20250821151648",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 8382,
+    "y": 3709,
+    "x": 4496
+   },
+   "seed_placement": {
+    "zf": 0.4,
+    "rf": 0.35,
+    "angle": 0.3,
+    "r_frac_measured": 0.353
+   },
+   "area_cm2": 17.37,
+   "grow_s": 4436,
+   "visual_qa": {
+    "surface": "layer-crossing swirls and gaps",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.5,
+     "period_mm": 7.95,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2289,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1247,
+     "valid_px": 15366186
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 13.9,
+     "period_mm": 7.12,
+     "angle_deg": -143.1,
+     "mean_ink": 0.2311,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1302,
+     "valid_px": 15366186
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 15.5,
+     "period_mm": 5.08,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2243,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.0882,
+     "valid_px": 15366186
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 15.5,
+     "period_mm": 5.08,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2216,
+     "p99": 0.825,
+     "frac_gt_0.5": 0.0826,
+     "valid_px": 15366186
+    }
+   },
+   "sheet": "results/sheets/v2_PHerc1545_s0.jpg",
+   "tifxyz": "results/segments/PHerc1545_v2_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0125",
+   "volume": "20250821151825",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 6240,
+    "y": 5184,
+    "x": 5392
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 13.74,
+   "grow_s": 2487,
+   "visual_qa": {
+    "surface": "follows the sheet throughout (crosshatch, cracks)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 8.1 / rev 10.0: speckle, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.0,
+     "period_mm": 3.05,
+     "angle_deg": -149.0,
+     "mean_ink": 0.2354,
+     "p99": 0.88,
+     "frac_gt_0.5": 0.0993,
+     "valid_px": 15366272
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.3,
+     "period_mm": 3.04,
+     "angle_deg": -160.0,
+     "mean_ink": 0.2613,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1376,
+     "valid_px": 15366272
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 5.6,
+     "period_mm": 7.95,
+     "angle_deg": -26.6,
+     "mean_ink": 0.2089,
+     "p99": 0.747,
+     "frac_gt_0.5": 0.0524,
+     "valid_px": 15366272
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.4,
+     "period_mm": 5.56,
+     "angle_deg": -141.3,
+     "mean_ink": 0.2217,
+     "p99": 0.763,
+     "frac_gt_0.5": 0.0668,
+     "valid_px": 15366272
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0125_s0.jpg",
+   "tifxyz": "results/segments/PHerc0125_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0125",
+   "volume": "20250821151825",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 10433,
+    "y": 5502,
+    "x": 5712
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 14.56,
+   "grow_s": 2904,
+   "visual_qa": {
+    "surface": "escapes the papyrus into uniform material in places",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.2,
+     "period_mm": 3.81,
+     "angle_deg": -167.6,
+     "mean_ink": 0.3027,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.2227,
+     "valid_px": 12387471
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 14.5,
+     "period_mm": 7.87,
+     "angle_deg": -153.7,
+     "mean_ink": 0.2553,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.1793,
+     "valid_px": 12387471
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.9,
+     "period_mm": 7.87,
+     "angle_deg": -26.3,
+     "mean_ink": 0.3391,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.246,
+     "valid_px": 12387471
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.4,
+     "period_mm": 7.06,
+     "angle_deg": -143.5,
+     "mean_ink": 0.3134,
+     "p99": 0.99,
+     "frac_gt_0.5": 0.2202,
+     "valid_px": 12387471
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0125_s7.jpg",
+   "tifxyz": "results/segments/PHerc0125_v3_s7.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0175A",
+   "volume": "20250521115057",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 3808,
+    "y": 6980,
+    "x": 5362
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 11.7,
+   "grow_s": 3268,
+   "visual_qa": {
+    "surface": "follows the sheet over most of the patch (crosshatch), diagonal cracks",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.4,
+     "period_mm": 4.51,
+     "angle_deg": -164.1,
+     "mean_ink": 0.3928,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.3155,
+     "valid_px": 15353106
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 11.8,
+     "period_mm": 7.74,
+     "angle_deg": -135.0,
+     "mean_ink": 0.3782,
+     "p99": 0.99,
+     "frac_gt_0.5": 0.2901,
+     "valid_px": 15353106
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.5,
+     "period_mm": 3.32,
+     "angle_deg": -135.0,
+     "mean_ink": 0.3532,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.2264,
+     "valid_px": 15353106
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 22.1,
+     "period_mm": 5.13,
+     "angle_deg": -141.3,
+     "mean_ink": 0.3208,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.1767,
+     "valid_px": 15353106
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0175A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0175A_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0175A",
+   "volume": "20250521115057",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 6367,
+    "y": 7151,
+    "x": 6112
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 11.72,
+   "grow_s": 3336,
+   "visual_qa": {
+    "surface": "follows the sheet throughout (crosshatch)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 7.7 / rev 9.9: speckle and squiggles, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 13.0,
+     "period_mm": 5.13,
+     "angle_deg": -141.3,
+     "mean_ink": 0.1934,
+     "p99": 0.88,
+     "frac_gt_0.5": 0.0898,
+     "valid_px": 15366391
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.7,
+     "period_mm": 3.27,
+     "angle_deg": -95.7,
+     "mean_ink": 0.1839,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0715,
+     "valid_px": 15366391
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.1,
+     "period_mm": 2.7,
+     "angle_deg": -99.5,
+     "mean_ink": 0.2368,
+     "p99": 0.778,
+     "frac_gt_0.5": 0.0738,
+     "valid_px": 15366391
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.4,
+     "period_mm": 5.4,
+     "angle_deg": -80.5,
+     "mean_ink": 0.2065,
+     "p99": 0.731,
+     "frac_gt_0.5": 0.0508,
+     "valid_px": 15366391
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0175A_s7.jpg",
+   "tifxyz": "results/segments/PHerc0175A_v3_s7.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0175B",
+   "volume": "20250521125822",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 4768,
+    "y": 5872,
+    "x": 6224
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 14.66,
+   "grow_s": 2976,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.1,
+     "period_mm": 3.67,
+     "angle_deg": -116.6,
+     "mean_ink": 0.2472,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1215,
+     "valid_px": 15366397
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 8.5,
+     "period_mm": 3.27,
+     "angle_deg": -174.3,
+     "mean_ink": 0.2503,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1274,
+     "valid_px": 15366397
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 8.9,
+     "period_mm": 3.87,
+     "angle_deg": -135.0,
+     "mean_ink": 0.228,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0722,
+     "valid_px": 15366397
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 5.5,
+     "period_mm": 3.05,
+     "angle_deg": -68.2,
+     "mean_ink": 0.2208,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0666,
+     "valid_px": 15366397
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0175B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0175B_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0175B",
+   "volume": "20250521125822",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 7936,
+    "y": 6608,
+    "x": 6944
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 15.16,
+   "grow_s": 3728,
+   "visual_qa": {
+    "surface": "layer-crossing swirls, small on-sheet areas",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 5.8,
+     "period_mm": 3.05,
+     "angle_deg": -68.2,
+     "mean_ink": 0.2193,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.0974,
+     "valid_px": 15366376
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 10.3,
+     "period_mm": 6.44,
+     "angle_deg": -168.7,
+     "mean_ink": 0.2142,
+     "p99": 0.857,
+     "frac_gt_0.5": 0.091,
+     "valid_px": 15366376
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.3,
+     "period_mm": 5.13,
+     "angle_deg": -38.7,
+     "mean_ink": 0.2192,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0647,
+     "valid_px": 15366376
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.5,
+     "period_mm": 4.64,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2099,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0637,
+     "valid_px": 15366376
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0175B_s9.jpg",
+   "tifxyz": "results/segments/PHerc0175B_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0191",
+   "volume": "20250821151635",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5696,
+    "y": 5968,
+    "x": 5440
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 16.95,
+   "grow_s": 3395,
+   "visual_qa": {
+    "surface": "swirls around folds, on-sheet crosshatch in the lower corners",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 10.2,
+     "period_mm": 4.93,
+     "angle_deg": -146.3,
+     "mean_ink": 0.2221,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.1106,
+     "valid_px": 15366149
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 8.5,
+     "period_mm": 5.03,
+     "angle_deg": -98.1,
+     "mean_ink": 0.2162,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.101,
+     "valid_px": 15366149
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.4,
+     "period_mm": 2.95,
+     "angle_deg": -175.2,
+     "mean_ink": 0.2211,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0783,
+     "valid_px": 15366149
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.5,
+     "period_mm": 5.62,
+     "angle_deg": -108.4,
+     "mean_ink": 0.2272,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.0848,
+     "valid_px": 15366149
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0191_s0.jpg",
+   "tifxyz": "results/segments/PHerc0191_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0191",
+   "volume": "20250821151635",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 9504,
+    "y": 5437,
+    "x": 5517
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 17.52,
+   "grow_s": 4030,
+   "visual_qa": {
+    "surface": "radial swirls and gaps (layer-crossing)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "note": "highest single-checkpoint row score of the survey: seed43/20k forward 28.7 at 5.85 mm, from broad bands following the layer-crossing swirls; the other three maps score 7.2-9.2; no letter-like shapes (checked at 640 px)"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.2,
+     "period_mm": 3.77,
+     "angle_deg": -122.0,
+     "mean_ink": 0.2352,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.115,
+     "valid_px": 15366256
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.4,
+     "period_mm": 7.95,
+     "angle_deg": -116.6,
+     "mean_ink": 0.2391,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.1176,
+     "valid_px": 15366256
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 28.7,
+     "period_mm": 5.85,
+     "angle_deg": -99.5,
+     "mean_ink": 0.2196,
+     "p99": 0.778,
+     "frac_gt_0.5": 0.0677,
+     "valid_px": 15366256
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.2,
+     "period_mm": 7.95,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2169,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0687,
+     "valid_px": 15366256
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0191_s9.jpg",
+   "tifxyz": "results/segments/PHerc0191_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0211",
+   "volume": "20250821151803",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5821,
+    "y": 5106,
+    "x": 4611
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 14.69,
+   "grow_s": 2080,
+   "visual_qa": {
+    "surface": "follows the sheet throughout (diagonal crosshatch)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 8.3 / rev 9.8: speckle with broad regions along the fold lines, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 11.1,
+     "period_mm": 6.98,
+     "angle_deg": -168.7,
+     "mean_ink": 0.3684,
+     "p99": 0.967,
+     "frac_gt_0.5": 0.2748,
+     "valid_px": 15365074
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.3,
+     "period_mm": 4.67,
+     "angle_deg": -113.2,
+     "mean_ink": 0.3717,
+     "p99": 0.982,
+     "frac_gt_0.5": 0.2741,
+     "valid_px": 15365074
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.7,
+     "period_mm": 7.12,
+     "angle_deg": -143.1,
+     "mean_ink": 0.323,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.1875,
+     "valid_px": 15365074
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.8,
+     "period_mm": 2.55,
+     "angle_deg": -21.0,
+     "mean_ink": 0.3117,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.176,
+     "valid_px": 15365074
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0211_s0.jpg",
+   "tifxyz": "results/segments/PHerc0211_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0211",
+   "volume": "20250821151803",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 9701,
+    "y": 4845,
+    "x": 4706
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 13.95,
+   "grow_s": 1620,
+   "visual_qa": {
+    "surface": "escapes the papyrus into uniform material over most of the patch",
+    "ink": "uniform speckle (the models fire on the non-papyrus material too); no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 15.7,
+     "period_mm": 6.98,
+     "angle_deg": -168.7,
+     "mean_ink": 0.3042,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.2418,
+     "valid_px": 13358435
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.7,
+     "period_mm": 5.93,
+     "angle_deg": -90.0,
+     "mean_ink": 0.398,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.3627,
+     "valid_px": 13358435
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 15.2,
+     "period_mm": 2.73,
+     "angle_deg": -94.4,
+     "mean_ink": 0.4392,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.3894,
+     "valid_px": 13358435
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 19.4,
+     "period_mm": 7.12,
+     "angle_deg": -90.0,
+     "mean_ink": 0.4032,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.3417,
+     "valid_px": 13358435
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0211_s9.jpg",
+   "tifxyz": "results/segments/PHerc0211_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0257",
+   "volume": "20250821151750",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5664,
+    "y": 5680,
+    "x": 5280
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 16.23,
+   "grow_s": 2995,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls with some faint crosshatch",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 10.9,
+     "period_mm": 6.98,
+     "angle_deg": -11.3,
+     "mean_ink": 0.2535,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1242,
+     "valid_px": 15366362
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 8.2,
+     "period_mm": 2.95,
+     "angle_deg": -138.4,
+     "mean_ink": 0.2561,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.13,
+     "valid_px": 15366362
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.9,
+     "period_mm": 4.16,
+     "angle_deg": -159.4,
+     "mean_ink": 0.2284,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0747,
+     "valid_px": 15366362
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.1,
+     "period_mm": 6.61,
+     "angle_deg": -158.2,
+     "mean_ink": 0.2265,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0748,
+     "valid_px": 15366362
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0257_s0.jpg",
+   "tifxyz": "results/segments/PHerc0257_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0257",
+   "volume": "20250821151750",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 9440,
+    "y": 5328,
+    "x": 5360
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 15.96,
+   "grow_s": 2725,
+   "visual_qa": {
+    "surface": "escapes the papyrus into uniform material and air over most of the patch",
+    "ink": "uniform speckle on the non-papyrus material; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.1,
+     "period_mm": 5.93,
+     "angle_deg": 180.0,
+     "mean_ink": 0.3224,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.2527,
+     "valid_px": 8358344
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.6,
+     "period_mm": 3.31,
+     "angle_deg": -90.0,
+     "mean_ink": 0.376,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.3172,
+     "valid_px": 8358344
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 5.6,
+     "period_mm": 4.92,
+     "angle_deg": -165.6,
+     "mean_ink": 0.3753,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.3089,
+     "valid_px": 8358344
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 6.7,
+     "period_mm": 2.84,
+     "angle_deg": -90.0,
+     "mean_ink": 0.3014,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.2037,
+     "valid_px": 8358344
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0257_s9.jpg",
+   "tifxyz": "results/segments/PHerc0257_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0268",
+   "volume": "20251110183117",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 4452,
+    "y": 8016,
+    "x": 7900
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 14.97,
+   "grow_s": 2390,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls (compressed region)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 11.4,
+     "period_mm": 7.96,
+     "angle_deg": -104.0,
+     "mean_ink": 0.2649,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1245,
+     "valid_px": 15366400
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 10.2,
+     "period_mm": 3.09,
+     "angle_deg": -131.2,
+     "mean_ink": 0.2644,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.126,
+     "valid_px": 15366400
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.1,
+     "period_mm": 7.34,
+     "angle_deg": -63.4,
+     "mean_ink": 0.225,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0624,
+     "valid_px": 15366400
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.0,
+     "period_mm": 7.96,
+     "angle_deg": -104.0,
+     "mean_ink": 0.2191,
+     "p99": 0.794,
+     "frac_gt_0.5": 0.0573,
+     "valid_px": 15366400
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0268_s0.jpg",
+   "tifxyz": "results/segments/PHerc0268_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0268",
+   "volume": "20251110183117",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 7424,
+    "y": 8401,
+    "x": 8560
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 15.67,
+   "grow_s": 2294,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls (compressed region)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 13.6,
+     "period_mm": 7.74,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2705,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1447,
+     "valid_px": 15366382
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.5,
+     "period_mm": 7.34,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2721,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1414,
+     "valid_px": 15366382
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.7,
+     "period_mm": 5.13,
+     "angle_deg": -38.7,
+     "mean_ink": 0.2323,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0662,
+     "valid_px": 15366382
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.5,
+     "period_mm": 7.34,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2332,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0669,
+     "valid_px": 15366382
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0268_s9.jpg",
+   "tifxyz": "results/segments/PHerc0268_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0306B",
+   "volume": "20250521133212",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 4768,
+    "y": 5472,
+    "x": 5504
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 14.64,
+   "grow_s": 2894,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls, small on-sheet areas",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.6,
+     "period_mm": 6.57,
+     "angle_deg": 180.0,
+     "mean_ink": 0.2559,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1359,
+     "valid_px": 15366233
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.7,
+     "period_mm": 7.34,
+     "angle_deg": -116.6,
+     "mean_ink": 0.2436,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1304,
+     "valid_px": 15366233
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.5,
+     "period_mm": 3.67,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2339,
+     "p99": 0.825,
+     "frac_gt_0.5": 0.0858,
+     "valid_px": 15366233
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.9,
+     "period_mm": 2.62,
+     "angle_deg": -151.4,
+     "mean_ink": 0.2294,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0821,
+     "valid_px": 15366233
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0306B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0306B_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0306B",
+   "volume": "20250521133212",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 7935,
+    "y": 5887,
+    "x": 6032
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 11.93,
+   "grow_s": 2391,
+   "visual_qa": {
+    "surface": "follows the sheet throughout (crosshatch, cracks)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 5.6 / rev 8.5: speckle in both directions, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.5,
+     "period_mm": 2.69,
+     "angle_deg": -125.0,
+     "mean_ink": 0.2457,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.1129,
+     "valid_px": 15244109
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.8,
+     "period_mm": 3.56,
+     "angle_deg": -49.4,
+     "mean_ink": 0.2453,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1122,
+     "valid_px": 15244109
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.8,
+     "period_mm": 5.63,
+     "angle_deg": -121.0,
+     "mean_ink": 0.2423,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0796,
+     "valid_px": 15244109
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.3,
+     "period_mm": 6.44,
+     "angle_deg": -168.7,
+     "mean_ink": 0.2197,
+     "p99": 0.731,
+     "frac_gt_0.5": 0.0539,
+     "valid_px": 15244109
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0306B_s9.jpg",
+   "tifxyz": "results/segments/PHerc0306B_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0343",
+   "volume": "20250521140437",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 5376,
+    "y": 5743,
+    "x": 5933
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 14.02,
+   "grow_s": 3428,
+   "visual_qa": {
+    "surface": "swirls through the middle, on-sheet crosshatch in the corners",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.9,
+     "period_mm": 3.98,
+     "angle_deg": -14.0,
+     "mean_ink": 0.242,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1249,
+     "valid_px": 15366317
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.7,
+     "period_mm": 7.74,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2447,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1348,
+     "valid_px": 15366317
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 6.2,
+     "period_mm": 3.27,
+     "angle_deg": -84.3,
+     "mean_ink": 0.2543,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.1041,
+     "valid_px": 15366317
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.1,
+     "period_mm": 3.84,
+     "angle_deg": -110.6,
+     "mean_ink": 0.2454,
+     "p99": 0.849,
+     "frac_gt_0.5": 0.098,
+     "valid_px": 15366317
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0343_s0.jpg",
+   "tifxyz": "results/segments/PHerc0343_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0343",
+   "volume": "20250521140437",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 8992,
+    "y": 6349,
+    "x": 6431
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 12.63,
+   "grow_s": 2318,
+   "visual_qa": {
+    "surface": "follows the sheet over most of the patch (crosshatch); one corner reaches air and uniform material",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true,
+    "ensemble14_both_directions": "fwd 16.9 / rev 11.7, both at 7.96 mm: dark diagonal bands along the fold lines of the render and bright rims at the air boundary; speckle elsewhere, no rows, no letters"
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.5,
+     "period_mm": 4.2,
+     "angle_deg": -50.2,
+     "mean_ink": 0.3532,
+     "p99": 0.975,
+     "frac_gt_0.5": 0.2677,
+     "valid_px": 13124253
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 8.8,
+     "period_mm": 5.4,
+     "angle_deg": -99.5,
+     "mean_ink": 0.3565,
+     "p99": 0.99,
+     "frac_gt_0.5": 0.273,
+     "valid_px": 13124253
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.8,
+     "period_mm": 3.48,
+     "angle_deg": -58.0,
+     "mean_ink": 0.3112,
+     "p99": 0.88,
+     "frac_gt_0.5": 0.1775,
+     "valid_px": 13124253
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 11.5,
+     "period_mm": 7.96,
+     "angle_deg": -166.0,
+     "mean_ink": 0.3537,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.2393,
+     "valid_px": 13124253
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0343_s9.jpg",
+   "tifxyz": "results/segments/PHerc0343_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0358",
+   "volume": "20250821151737",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 4416,
+    "y": 5008,
+    "x": 4768
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 16.0,
+   "grow_s": 3130,
+   "visual_qa": {
+    "surface": "on-sheet crosshatch in places, swirls and a dark fold",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.4,
+     "period_mm": 5.56,
+     "angle_deg": -128.7,
+     "mean_ink": 0.2759,
+     "p99": 0.943,
+     "frac_gt_0.5": 0.1712,
+     "valid_px": 15366076
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 10.6,
+     "period_mm": 4.14,
+     "angle_deg": -35.5,
+     "mean_ink": 0.2812,
+     "p99": 0.959,
+     "frac_gt_0.5": 0.179,
+     "valid_px": 15366076
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.7,
+     "period_mm": 4.89,
+     "angle_deg": -15.9,
+     "mean_ink": 0.2718,
+     "p99": 0.841,
+     "frac_gt_0.5": 0.1296,
+     "valid_px": 15366076
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.8,
+     "period_mm": 4.55,
+     "angle_deg": -39.8,
+     "mean_ink": 0.2882,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.156,
+     "valid_px": 15366076
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0358_s0.jpg",
+   "tifxyz": "results/segments/PHerc0358_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0358",
+   "volume": "20250821151737",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 7360,
+    "y": 5600,
+    "x": 5600
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 17.06,
+   "grow_s": 2656,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.5,
+     "period_mm": 7.12,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2559,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1337,
+     "valid_px": 15362216
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 11.2,
+     "period_mm": 7.12,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2609,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1417,
+     "valid_px": 15362216
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.4,
+     "period_mm": 4.41,
+     "angle_deg": -82.9,
+     "mean_ink": 0.2386,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0911,
+     "valid_px": 15362216
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 11.5,
+     "period_mm": 7.95,
+     "angle_deg": -26.6,
+     "mean_ink": 0.2401,
+     "p99": 0.833,
+     "frac_gt_0.5": 0.0942,
+     "valid_px": 15362216
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0358_s7.jpg",
+   "tifxyz": "results/segments/PHerc0358_v3_s7.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0483A",
+   "volume": "20250521140913",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 4768,
+    "y": 5552,
+    "x": 5216
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 12.84,
+   "grow_s": 2861,
+   "visual_qa": {
+    "surface": "follows the sheet over most of the patch (crosshatch), swirls in one corner",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.8,
+     "period_mm": 4.51,
+     "angle_deg": -105.9,
+     "mean_ink": 0.1631,
+     "p99": 0.865,
+     "frac_gt_0.5": 0.0666,
+     "valid_px": 15366375
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.8,
+     "period_mm": 6.57,
+     "angle_deg": -90.0,
+     "mean_ink": 0.155,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0565,
+     "valid_px": 15366375
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.9,
+     "period_mm": 3.98,
+     "angle_deg": -14.0,
+     "mean_ink": 0.1638,
+     "p99": 0.692,
+     "frac_gt_0.5": 0.0372,
+     "valid_px": 15366375
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.2,
+     "period_mm": 7.34,
+     "angle_deg": -116.6,
+     "mean_ink": 0.1519,
+     "p99": 0.661,
+     "frac_gt_0.5": 0.0281,
+     "valid_px": 15366375
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0483A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0483A_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0483A",
+   "volume": "20250521140913",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 7935,
+    "y": 4579,
+    "x": 2608
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 3.0
+   },
+   "area_cm2": 13.02,
+   "grow_s": 2345,
+   "visual_qa": {
+    "surface": "on the sheet over most of the patch (diagonal crosshatch), swirls in one corner",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.3,
+     "period_mm": 3.63,
+     "angle_deg": -173.7,
+     "mean_ink": 0.2351,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1075,
+     "valid_px": 15257766
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.7,
+     "period_mm": 4.89,
+     "angle_deg": -26.6,
+     "mean_ink": 0.2408,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1108,
+     "valid_px": 15257766
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.2,
+     "period_mm": 3.22,
+     "angle_deg": -168.7,
+     "mean_ink": 0.2049,
+     "p99": 0.716,
+     "frac_gt_0.5": 0.0456,
+     "valid_px": 15257766
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.2,
+     "period_mm": 5.63,
+     "angle_deg": -149.0,
+     "mean_ink": 0.2031,
+     "p99": 0.724,
+     "frac_gt_0.5": 0.0424,
+     "valid_px": 15257766
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0483A_s8.jpg",
+   "tifxyz": "results/segments/PHerc0483A_v3_s8.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0483B",
+   "volume": "20251124083638",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 3552,
+    "y": 5808,
+    "x": 5360
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 13.12,
+   "grow_s": 2334,
+   "visual_qa": {
+    "surface": "on the sheet in the upper half (crosshatch), swirls below, a mesh hole in one corner",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.0,
+     "period_mm": 6.44,
+     "angle_deg": -11.3,
+     "mean_ink": 0.2778,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1464,
+     "valid_px": 14664157
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.6,
+     "period_mm": 6.44,
+     "angle_deg": -101.3,
+     "mean_ink": 0.2863,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1621,
+     "valid_px": 14664157
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.6,
+     "period_mm": 7.96,
+     "angle_deg": -104.0,
+     "mean_ink": 0.2555,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0946,
+     "valid_px": 14664157
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.2,
+     "period_mm": 7.96,
+     "angle_deg": -104.0,
+     "mean_ink": 0.2328,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0693,
+     "valid_px": 14664157
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0483B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0483B_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0483B",
+   "volume": "20251124083638",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 5952,
+    "y": 6240,
+    "x": 5761
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 14.67,
+   "grow_s": 2618,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 11.4,
+     "period_mm": 3.67,
+     "angle_deg": -116.6,
+     "mean_ink": 0.2348,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.1147,
+     "valid_px": 15366321
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 5.8,
+     "period_mm": 3.22,
+     "angle_deg": -101.3,
+     "mean_ink": 0.244,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.1215,
+     "valid_px": 15366321
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 8.9,
+     "period_mm": 2.58,
+     "angle_deg": -135.0,
+     "mean_ink": 0.217,
+     "p99": 0.778,
+     "frac_gt_0.5": 0.0641,
+     "valid_px": 15366321
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 5.4,
+     "period_mm": 2.9,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2306,
+     "p99": 0.794,
+     "frac_gt_0.5": 0.0749,
+     "valid_px": 15366321
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0483B_s8.jpg",
+   "tifxyz": "results/segments/PHerc0483B_v3_s8.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0490A",
+   "volume": "20250521151210",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 3483,
+    "y": 5669,
+    "x": 5715
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 15.04,
+   "grow_s": 2062,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls with mesh holes",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.7,
+     "period_mm": 3.98,
+     "angle_deg": -104.0,
+     "mean_ink": 0.305,
+     "p99": 0.959,
+     "frac_gt_0.5": 0.1782,
+     "valid_px": 14506824
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 14.4,
+     "period_mm": 2.74,
+     "angle_deg": -90.0,
+     "mean_ink": 0.302,
+     "p99": 0.959,
+     "frac_gt_0.5": 0.1782,
+     "valid_px": 14506824
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.0,
+     "period_mm": 4.2,
+     "angle_deg": -140.2,
+     "mean_ink": 0.2298,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0669,
+     "valid_px": 14506824
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.2,
+     "period_mm": 3.28,
+     "angle_deg": -126.9,
+     "mean_ink": 0.2319,
+     "p99": 0.794,
+     "frac_gt_0.5": 0.066,
+     "valid_px": 14506824
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0490A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0490A_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0490A",
+   "volume": "20250521151210",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 5856,
+    "y": 5856,
+    "x": 6032
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 14.24,
+   "grow_s": 2413,
+   "visual_qa": {
+    "surface": "swirls and mesh holes, on-sheet crosshatch in the centre",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 12.3,
+     "period_mm": 7.74,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2683,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1484,
+     "valid_px": 14559788
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 13.6,
+     "period_mm": 7.34,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2813,
+     "p99": 0.943,
+     "frac_gt_0.5": 0.1603,
+     "valid_px": 14559788
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.8,
+     "period_mm": 2.94,
+     "angle_deg": -169.7,
+     "mean_ink": 0.2462,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0894,
+     "valid_px": 14559788
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.9,
+     "period_mm": 7.96,
+     "angle_deg": -76.0,
+     "mean_ink": 0.2496,
+     "p99": 0.825,
+     "frac_gt_0.5": 0.0979,
+     "valid_px": 14559788
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0490A_s9.jpg",
+   "tifxyz": "results/segments/PHerc0490A_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0490B",
+   "volume": "20250521151215",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 3166,
+    "y": 5439,
+    "x": 5407
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 14.03,
+   "grow_s": 2268,
+   "visual_qa": {
+    "surface": "crosshatch on the upper left, radial layer-crossing swirls elsewhere, mesh holes on the right",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.1,
+     "period_mm": 4.64,
+     "angle_deg": -81.9,
+     "mean_ink": 0.2447,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.12,
+     "valid_px": 13977173
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 5.5,
+     "period_mm": 7.74,
+     "angle_deg": -45.0,
+     "mean_ink": 0.247,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1188,
+     "valid_px": 13977173
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.4,
+     "period_mm": 5.13,
+     "angle_deg": -51.3,
+     "mean_ink": 0.1978,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0495,
+     "valid_px": 13977173
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 7.3,
+     "period_mm": 5.63,
+     "angle_deg": -31.0,
+     "mean_ink": 0.2008,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.051,
+     "valid_px": 13977173
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0490B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0490B_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0490B",
+   "volume": "20250521151215",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 5312,
+    "y": 5809,
+    "x": 5760
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 14.62,
+   "grow_s": 2413,
+   "visual_qa": {
+    "surface": "on-sheet crosshatch in the upper half, swirls and folds below",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.3,
+     "period_mm": 3.05,
+     "angle_deg": -21.8,
+     "mean_ink": 0.2416,
+     "p99": 0.88,
+     "frac_gt_0.5": 0.1118,
+     "valid_px": 15353562
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 8.4,
+     "period_mm": 7.34,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2431,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1103,
+     "valid_px": 15353562
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.8,
+     "period_mm": 7.96,
+     "angle_deg": -76.0,
+     "mean_ink": 0.2086,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0571,
+     "valid_px": 15353562
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.5,
+     "period_mm": 6.57,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2183,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0635,
+     "valid_px": 15353562
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0490B_s9.jpg",
+   "tifxyz": "results/segments/PHerc0490B_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0813",
+   "volume": "20250821151723",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5088,
+    "y": 5264,
+    "x": 5072
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 17.29,
+   "grow_s": 2594,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls throughout",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 18.1,
+     "period_mm": 6.61,
+     "angle_deg": -111.8,
+     "mean_ink": 0.2487,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1391,
+     "valid_px": 15366357
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 33.5,
+     "period_mm": 6.61,
+     "angle_deg": -111.8,
+     "mean_ink": 0.2552,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1504,
+     "valid_px": 15366357
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 7.8,
+     "period_mm": 6.61,
+     "angle_deg": -111.8,
+     "mean_ink": 0.257,
+     "p99": 0.857,
+     "frac_gt_0.5": 0.1157,
+     "valid_px": 15366357
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 15.9,
+     "period_mm": 6.61,
+     "angle_deg": -111.8,
+     "mean_ink": 0.2598,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.1181,
+     "valid_px": 15366357
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0813_s0.jpg",
+   "tifxyz": "results/segments/PHerc0813_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0813",
+   "volume": "20250821151723",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 8512,
+    "y": 5264,
+    "x": 6016
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 13.78,
+   "grow_s": 2122,
+   "visual_qa": {
+    "surface": "follows the sheet throughout (diagonal crosshatch)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 6.9,
+     "period_mm": 5.62,
+     "angle_deg": -108.4,
+     "mean_ink": 0.3036,
+     "p99": 0.951,
+     "frac_gt_0.5": 0.1856,
+     "valid_px": 15366381
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 7.2,
+     "period_mm": 4.45,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2822,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1536,
+     "valid_px": 15366381
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 6.7,
+     "period_mm": 5.85,
+     "angle_deg": -9.5,
+     "mean_ink": 0.3097,
+     "p99": 0.841,
+     "frac_gt_0.5": 0.1513,
+     "valid_px": 15366381
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 13.2,
+     "period_mm": 5.03,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2837,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.1147,
+     "valid_px": 15366381
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0813_s9.jpg",
+   "tifxyz": "results/segments/PHerc0813_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0826",
+   "volume": "20250821151701",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5056,
+    "y": 4928,
+    "x": 5040
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 17.09,
+   "grow_s": 2611,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls throughout",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.1,
+     "period_mm": 4.14,
+     "angle_deg": -144.5,
+     "mean_ink": 0.2202,
+     "p99": 0.967,
+     "frac_gt_0.5": 0.1191,
+     "valid_px": 15366130
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.4,
+     "period_mm": 6.98,
+     "angle_deg": -78.7,
+     "mean_ink": 0.2131,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1109,
+     "valid_px": 15366130
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.7,
+     "period_mm": 3.86,
+     "angle_deg": -102.5,
+     "mean_ink": 0.2167,
+     "p99": 0.857,
+     "frac_gt_0.5": 0.0833,
+     "valid_px": 15366130
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 6.2,
+     "period_mm": 3.3,
+     "angle_deg": -111.8,
+     "mean_ink": 0.2087,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0746,
+     "valid_px": 15366130
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0826_s0.jpg",
+   "tifxyz": "results/segments/PHerc0826_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0826",
+   "volume": "20250821151701",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 8450,
+    "y": 4960,
+    "x": 1315
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 3.0
+   },
+   "area_cm2": 14.99,
+   "grow_s": 2505,
+   "visual_qa": {
+    "surface": "follows the sheet on the right two-thirds (crosshatch), swirls on the left",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.7,
+     "period_mm": 2.62,
+     "angle_deg": -126.0,
+     "mean_ink": 0.2072,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.116,
+     "valid_px": 15310392
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 8.1,
+     "period_mm": 2.56,
+     "angle_deg": -30.3,
+     "mean_ink": 0.2193,
+     "p99": 0.951,
+     "frac_gt_0.5": 0.131,
+     "valid_px": 15310392
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.7,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.1788,
+     "p99": 0.747,
+     "frac_gt_0.5": 0.0461,
+     "valid_px": 15310392
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 11.3,
+     "period_mm": 6.29,
+     "angle_deg": -45.0,
+     "mean_ink": 0.1999,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.0629,
+     "valid_px": 15310392
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0826_s9.jpg",
+   "tifxyz": "results/segments/PHerc0826_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0846A",
+   "volume": "20250728152254",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 4194,
+    "y": 4867,
+    "x": 4642
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 15.74,
+   "grow_s": 2907,
+   "visual_qa": {
+    "surface": "follows the sheet on the right half (crosshatch), swirls on the left",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.4,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.3098,
+     "p99": 1.0,
+     "frac_gt_0.5": 0.2202,
+     "valid_px": 15366242
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 10.4,
+     "period_mm": 6.1,
+     "angle_deg": -121.0,
+     "mean_ink": 0.2895,
+     "p99": 0.975,
+     "frac_gt_0.5": 0.1847,
+     "valid_px": 15366242
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 13.5,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.2779,
+     "p99": 0.888,
+     "frac_gt_0.5": 0.1506,
+     "valid_px": 15366242
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.5,
+     "period_mm": 4.67,
+     "angle_deg": -66.8,
+     "mean_ink": 0.2583,
+     "p99": 0.849,
+     "frac_gt_0.5": 0.1125,
+     "valid_px": 15366242
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0846A_s0.jpg",
+   "tifxyz": "results/segments/PHerc0846A_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0846A",
+   "volume": "20250728152254",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 7008,
+    "y": 4320,
+    "x": 1808
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 3.0
+   },
+   "area_cm2": 17.59,
+   "grow_s": 2636,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls, some crosshatch near the centre",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 11.5,
+     "period_mm": 4.67,
+     "angle_deg": -66.8,
+     "mean_ink": 0.2348,
+     "p99": 0.873,
+     "frac_gt_0.5": 0.1046,
+     "valid_px": 15366341
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 15.1,
+     "period_mm": 7.12,
+     "angle_deg": 180.0,
+     "mean_ink": 0.2394,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1129,
+     "valid_px": 15366341
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 16.9,
+     "period_mm": 7.95,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2158,
+     "p99": 0.763,
+     "frac_gt_0.5": 0.063,
+     "valid_px": 15366341
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 11.5,
+     "period_mm": 7.95,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2132,
+     "p99": 0.794,
+     "frac_gt_0.5": 0.0646,
+     "valid_px": 15366341
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0846A_s9.jpg",
+   "tifxyz": "results/segments/PHerc0846A_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0846B",
+   "volume": "20250804142305",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 4160,
+    "y": 4624,
+    "x": 1408
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 3.0
+   },
+   "area_cm2": 15.1,
+   "grow_s": 3173,
+   "visual_qa": {
+    "surface": "follows the sheet over most of the patch (diagonal crosshatch, cracks), swirls at the edges",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 7.5,
+     "period_mm": 2.52,
+     "angle_deg": -135.0,
+     "mean_ink": 0.288,
+     "p99": 0.92,
+     "frac_gt_0.5": 0.1573,
+     "valid_px": 15365254
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.2,
+     "period_mm": 7.95,
+     "angle_deg": -116.6,
+     "mean_ink": 0.2948,
+     "p99": 0.943,
+     "frac_gt_0.5": 0.1714,
+     "valid_px": 15365254
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.8,
+     "period_mm": 5.03,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2476,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.088,
+     "valid_px": 15365254
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.9,
+     "period_mm": 5.62,
+     "angle_deg": -161.6,
+     "mean_ink": 0.2298,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0837,
+     "valid_px": 15365254
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0846B_s0.jpg",
+   "tifxyz": "results/segments/PHerc0846B_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc0846B",
+   "volume": "20250804142305",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 6974,
+    "y": 4531,
+    "x": 995
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 3.0
+   },
+   "area_cm2": 16.76,
+   "grow_s": 2875,
+   "visual_qa": {
+    "surface": "sheet with crosshatch and mesh holes on the upper left, swirls below",
+    "ink": "speckle in both directions with a brighter diagonal band along the holed region, the same in both directions (structural); no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.3,
+     "period_mm": 7.95,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2541,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1378,
+     "valid_px": 15319565
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 13.5,
+     "period_mm": 7.95,
+     "angle_deg": -63.4,
+     "mean_ink": 0.2588,
+     "p99": 0.951,
+     "frac_gt_0.5": 0.1452,
+     "valid_px": 15319565
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 6.6,
+     "period_mm": 5.3,
+     "angle_deg": -153.4,
+     "mean_ink": 0.2242,
+     "p99": 0.794,
+     "frac_gt_0.5": 0.0765,
+     "valid_px": 15319565
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 17.2,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.2443,
+     "p99": 0.88,
+     "frac_gt_0.5": 0.1075,
+     "valid_px": 15319565
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc0846B_s4.jpg",
+   "tifxyz": "results/segments/PHerc0846B_v3_s4.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc1203",
+   "volume": "20250820131727",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 5690,
+    "y": 4508,
+    "x": 4047
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 16.87,
+   "grow_s": 2949,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls throughout",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 8.2,
+     "period_mm": 5.03,
+     "angle_deg": -81.9,
+     "mean_ink": 0.2074,
+     "p99": 0.849,
+     "frac_gt_0.5": 0.0949,
+     "valid_px": 15366383
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 11.0,
+     "period_mm": 6.1,
+     "angle_deg": -149.0,
+     "mean_ink": 0.2113,
+     "p99": 0.865,
+     "frac_gt_0.5": 0.0988,
+     "valid_px": 15366383
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 10.1,
+     "period_mm": 4.89,
+     "angle_deg": -74.1,
+     "mean_ink": 0.2109,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0707,
+     "valid_px": 15366383
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 10.4,
+     "period_mm": 7.12,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2058,
+     "p99": 0.771,
+     "frac_gt_0.5": 0.0662,
+     "valid_px": 15366383
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc1203_s0.jpg",
+   "tifxyz": "results/segments/PHerc1203_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc1203",
+   "volume": "20250820131727",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 9504,
+    "y": 4656,
+    "x": 4528
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 17.3,
+   "grow_s": 3467,
+   "visual_qa": {
+    "surface": "swirls on the left; escapes into a void and uniform material at the centre and lower right; mesh holes",
+    "ink": "speckle; the uniform material lights up in both directions (the models fire on non-papyrus material); no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 21.4,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.237,
+     "p99": 0.982,
+     "frac_gt_0.5": 0.1395,
+     "valid_px": 14526005
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 24.7,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.2365,
+     "p99": 0.982,
+     "frac_gt_0.5": 0.1349,
+     "valid_px": 14526005
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 12.1,
+     "period_mm": 7.95,
+     "angle_deg": -116.6,
+     "mean_ink": 0.2244,
+     "p99": 0.927,
+     "frac_gt_0.5": 0.1023,
+     "valid_px": 14526005
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 25.6,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.2429,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1243,
+     "valid_px": 14526005
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc1203_s9.jpg",
+   "tifxyz": "results/segments/PHerc1203_v3_s9.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc1218",
+   "volume": "20250521120456",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 6976,
+    "y": 5024,
+    "x": 4688
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 13.32,
+   "grow_s": 2638,
+   "visual_qa": {
+    "surface": "follows the sheet on the left half (crosshatch), swirls on the right",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 6.7,
+     "period_mm": 3.98,
+     "angle_deg": -14.0,
+     "mean_ink": 0.2565,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.1325,
+     "valid_px": 15366358
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.3,
+     "period_mm": 7.74,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2648,
+     "p99": 0.935,
+     "frac_gt_0.5": 0.1432,
+     "valid_px": 15366358
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 11.3,
+     "period_mm": 6.1,
+     "angle_deg": -158.2,
+     "mean_ink": 0.2266,
+     "p99": 0.786,
+     "frac_gt_0.5": 0.0748,
+     "valid_px": 15366358
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.3,
+     "period_mm": 4.51,
+     "angle_deg": -15.9,
+     "mean_ink": 0.2461,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0934,
+     "valid_px": 15366358
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc1218_s0.jpg",
+   "tifxyz": "results/segments/PHerc1218_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc1218",
+   "volume": "20250521120456",
+   "voxel_um": 8.64,
+   "seed": {
+    "z": 11606,
+    "y": 4513,
+    "x": 1970
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 3.0
+   },
+   "area_cm2": 12.77,
+   "grow_s": 3477,
+   "visual_qa": {
+    "surface": "follows the sheet over most of the patch (crosshatch), a diagonal crease through the centre, swirls lower middle",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 14.5,
+     "period_mm": 4.31,
+     "angle_deg": -23.2,
+     "mean_ink": 0.29,
+     "p99": 0.975,
+     "frac_gt_0.5": 0.1752,
+     "valid_px": 15337352
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 9.5,
+     "period_mm": 5.13,
+     "angle_deg": -141.3,
+     "mean_ink": 0.2864,
+     "p99": 0.959,
+     "frac_gt_0.5": 0.1747,
+     "valid_px": 15337352
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 6.4,
+     "period_mm": 4.31,
+     "angle_deg": -23.2,
+     "mean_ink": 0.2605,
+     "p99": 0.841,
+     "frac_gt_0.5": 0.111,
+     "valid_px": 15337352
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.0,
+     "period_mm": 3.56,
+     "angle_deg": -102.5,
+     "mean_ink": 0.2353,
+     "p99": 0.81,
+     "frac_gt_0.5": 0.0846,
+     "valid_px": 15337352
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc1218_s7.jpg",
+   "tifxyz": "results/segments/PHerc1218_v3_s7.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc1545",
+   "volume": "20250821151648",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 6272,
+    "y": 4097,
+    "x": 4672
+   },
+   "seed_placement": {
+    "zf": 0.3,
+    "rf": 0.5,
+    "angle": 0.8
+   },
+   "area_cm2": 16.67,
+   "grow_s": 2751,
+   "visual_qa": {
+    "surface": "radial layer-crossing swirls throughout",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.3,
+     "period_mm": 3.59,
+     "angle_deg": -45.0,
+     "mean_ink": 0.2349,
+     "p99": 0.896,
+     "frac_gt_0.5": 0.1209,
+     "valid_px": 15366383
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 12.1,
+     "period_mm": 6.98,
+     "angle_deg": -78.7,
+     "mean_ink": 0.241,
+     "p99": 0.904,
+     "frac_gt_0.5": 0.1287,
+     "valid_px": 15366383
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.8,
+     "period_mm": 7.12,
+     "angle_deg": -53.1,
+     "mean_ink": 0.2271,
+     "p99": 0.825,
+     "frac_gt_0.5": 0.0829,
+     "valid_px": 15366383
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 9.9,
+     "period_mm": 7.12,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2239,
+     "p99": 0.825,
+     "frac_gt_0.5": 0.08,
+     "valid_px": 15366383
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc1545_s0.jpg",
+   "tifxyz": "results/segments/PHerc1545_v3_s0.tifxyz"
+  },
+  {
+   "pass": "v3",
+   "scroll": "PHerc1545",
+   "volume": "20250821151648",
+   "voxel_um": 9.362,
+   "seed": {
+    "z": 10496,
+    "y": 4380,
+    "x": 4690
+   },
+   "seed_placement": {
+    "zf": 0.5,
+    "rf": 0.7,
+    "angle": 0.8
+   },
+   "area_cm2": 15.54,
+   "grow_s": 2808,
+   "visual_qa": {
+    "surface": "follows the sheet on the left half (crosshatch); escapes into a void and uniform material on the upper right (mesh holes)",
+    "ink": "speckle in both directions; no rows, no letter-like shapes",
+    "public": true
+   },
+   "row_scores": {
+    "hybrid_3d2d-seed42_step-075000_forward": {
+     "score": 9.5,
+     "period_mm": 2.54,
+     "angle_deg": -90.0,
+     "mean_ink": 0.2259,
+     "p99": 0.912,
+     "frac_gt_0.5": 0.109,
+     "valid_px": 14032548
+    },
+    "hybrid_3d2d-seed42_step-075000_reverse": {
+     "score": 14.8,
+     "period_mm": 4.89,
+     "angle_deg": -164.1,
+     "mean_ink": 0.204,
+     "p99": 0.857,
+     "frac_gt_0.5": 0.0874,
+     "valid_px": 14032548
+    },
+    "hybrid_3d2d-seed43_step-020000_forward": {
+     "score": 9.6,
+     "period_mm": 6.29,
+     "angle_deg": -135.0,
+     "mean_ink": 0.2006,
+     "p99": 0.818,
+     "frac_gt_0.5": 0.0673,
+     "valid_px": 14032548
+    },
+    "hybrid_3d2d-seed43_step-020000_reverse": {
+     "score": 8.0,
+     "period_mm": 7.95,
+     "angle_deg": -26.6,
+     "mean_ink": 0.1825,
+     "p99": 0.802,
+     "frac_gt_0.5": 0.051,
+     "valid_px": 14032548
+    }
+   },
+   "sheet": "results/sheets/v3_PHerc1545_s9.jpg",
+   "tifxyz": "results/segments/PHerc1545_v3_s9.tifxyz"
+  }
+ ],
+ "published_segments": [
+  {
+   "scroll": "PHerc0800",
+   "segment": "20251028213516-auto_grown_20251028213516907",
+   "ensemble_row_score": {
+    "score": 23.1,
+    "period_mm": 7.95,
+    "angle_deg": -90.0,
+    "mean_ink": 0.1654,
+    "p99": 0.575,
+    "frac_gt_0.5": 0.017,
+    "valid_px": 2281999
+   },
+   "visual_qa": {
+    "surface": "follows the sheet (fiber crosshatch visible)",
+    "ink": "scattered blobs and border edges; no rows, no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc0800_20251028213516-auto_grown_20251028213516.jpg"
+  },
+  {
+   "scroll": "PHerc0800",
+   "segment": "20251028220042-auto_grown_20251028220042762",
+   "ensemble_row_score": {
+    "score": 6.2,
+    "period_mm": 3.64,
+    "angle_deg": -104.3,
+    "mean_ink": 0.2251,
+    "p99": 0.763,
+    "frac_gt_0.5": 0.0643,
+    "valid_px": 2111200
+   },
+   "visual_qa": {
+    "surface": "follows the sheet (fiber crosshatch visible)",
+    "ink": "scattered blobs and border edges; no rows, no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc0800_20251028220042-auto_grown_20251028220042.jpg"
+  },
+  {
+   "scroll": "PHerc0800",
+   "segment": "20251028220955-auto_grown_20251028220955262",
+   "ensemble_row_score": {
+    "score": 12.4,
+    "period_mm": 7.69,
+    "angle_deg": 180.0,
+    "mean_ink": 0.2169,
+    "p99": 0.684,
+    "frac_gt_0.5": 0.0521,
+    "valid_px": 2044897
+   },
+   "visual_qa": {
+    "surface": "follows the sheet (fiber crosshatch visible)",
+    "ink": "scattered blobs and border edges; no rows, no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc0800_20251028220955-auto_grown_20251028220955.jpg"
+  },
+  {
+   "scroll": "PHerc0800",
+   "segment": "20251028222030-auto_grown_20251028222030940",
+   "ensemble_row_score": {
+    "score": 5.8,
+    "period_mm": 4.37,
+    "angle_deg": -116.6,
+    "mean_ink": 0.1591,
+    "p99": 0.629,
+    "frac_gt_0.5": 0.0214,
+    "valid_px": 3130900
+   },
+   "visual_qa": {
+    "surface": "follows the sheet (fiber crosshatch visible)",
+    "ink": "scattered blobs and border edges; no rows, no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc0800_20251028222030-auto_grown_20251028222030.jpg"
+  },
+  {
+   "scroll": "PHerc0800",
+   "segment": "20251028225813-auto_grown_20251028225813045",
+   "ensemble_row_score": {
+    "score": 5.4,
+    "period_mm": 2.65,
+    "angle_deg": -129.2,
+    "mean_ink": 0.1616,
+    "p99": 0.496,
+    "frac_gt_0.5": 0.0097,
+    "valid_px": 2454100
+   },
+   "visual_qa": {
+    "surface": "follows the sheet (fiber crosshatch visible)",
+    "ink": "scattered blobs and border edges; no rows, no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc0800_20251028225813-auto_grown_20251028225813.jpg"
+  },
+  {
+   "scroll": "PHerc0800",
+   "segment": "20251029010146-auto_grown_20251029010146642",
+   "ensemble_row_score": {
+    "score": 2.5,
+    "period_mm": 6.05,
+    "angle_deg": 180.0,
+    "mean_ink": 0.162,
+    "p99": 0.535,
+    "frac_gt_0.5": 0.0162,
+    "valid_px": 477099
+   },
+   "visual_qa": {
+    "surface": "follows the sheet (fiber crosshatch visible)",
+    "ink": "scattered blobs and border edges; no rows, no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc0800_20251029010146-auto_grown_20251029010146.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502180708-auto_grown_20250502160708188",
+   "ensemble_row_score": {
+    "score": null,
+    "reason": "too small"
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502180708-auto_grown_20250502160708.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502180748-auto_grown_20250502160748721",
+   "ensemble_row_score": {
+    "score": 3.0,
+    "period_mm": 5.56,
+    "angle_deg": 180.0,
+    "mean_ink": 0.3048,
+    "p99": 0.771,
+    "frac_gt_0.5": 0.1448,
+    "valid_px": 1529865
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502180748-auto_grown_20250502160748.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502182142-auto_grown_20250502161324419",
+   "ensemble_row_score": {
+    "score": 7.4,
+    "period_mm": 6.09,
+    "angle_deg": -90.0,
+    "mean_ink": 0.2834,
+    "p99": 0.802,
+    "frac_gt_0.5": 0.0968,
+    "valid_px": 2628859
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502182142-auto_grown_20250502161324.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502182456-auto_grown_20250502161202782",
+   "ensemble_row_score": {
+    "score": 3.8,
+    "period_mm": 7.63,
+    "angle_deg": -23.0,
+    "mean_ink": 0.3442,
+    "p99": 0.794,
+    "frac_gt_0.5": 0.1784,
+    "valid_px": 2766836
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502182456-auto_grown_20250502161202.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502183138-auto_grown_20250502162038685",
+   "ensemble_row_score": {
+    "score": null,
+    "reason": "band empty"
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502183138-auto_grown_20250502162038.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502183421-auto_grown_20250502161744358",
+   "ensemble_row_score": {
+    "score": 8.4,
+    "period_mm": 3.9,
+    "angle_deg": -16.8,
+    "mean_ink": 0.3173,
+    "p99": 0.763,
+    "frac_gt_0.5": 0.1402,
+    "valid_px": 2353531
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502183421-auto_grown_20250502161744.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502184201-auto_grown_20250502163549332",
+   "ensemble_row_score": {
+    "score": 3.8,
+    "period_mm": 2.55,
+    "angle_deg": -22.9,
+    "mean_ink": 0.3444,
+    "p99": 0.763,
+    "frac_gt_0.5": 0.171,
+    "valid_px": 1964569
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502184201-auto_grown_20250502163549.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502184658-auto_grown_20250502163923577",
+   "ensemble_row_score": {
+    "score": 9.6,
+    "period_mm": 4.5,
+    "angle_deg": -90.0,
+    "mean_ink": 0.3351,
+    "p99": 0.786,
+    "frac_gt_0.5": 0.1563,
+    "valid_px": 2721698
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502184658-auto_grown_20250502163923.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502184845-auto_grown_20250502164121265",
+   "ensemble_row_score": {
+    "score": 5.7,
+    "period_mm": 3.46,
+    "angle_deg": -102.1,
+    "mean_ink": 0.3086,
+    "p99": 0.763,
+    "frac_gt_0.5": 0.1166,
+    "valid_px": 3924047
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502184845-auto_grown_20250502164121.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502185519-auto_grown_20250502164303733",
+   "ensemble_row_score": {
+    "score": 4.8,
+    "period_mm": 3.58,
+    "angle_deg": -163.5,
+    "mean_ink": 0.3296,
+    "p99": 0.786,
+    "frac_gt_0.5": 0.1545,
+    "valid_px": 2525556
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502185519-auto_grown_20250502164303.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250502205333-auto_grown_20250502181030065",
+   "ensemble_row_score": {
+    "score": 14.2,
+    "period_mm": 6.77,
+    "angle_deg": -70.8,
+    "mean_ink": 0.3108,
+    "p99": 0.747,
+    "frac_gt_0.5": 0.1243,
+    "valid_px": 5228558
+   },
+   "visual_qa": {
+    "surface": "oblique striations: surface cuts across several layers",
+    "ink": "border artifacts and blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250502205333-auto_grown_20250502181030.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250702235910-auto_grown_20250702235910292",
+   "ensemble_row_score": {
+    "score": 6.1,
+    "period_mm": 2.56,
+    "angle_deg": -78.5,
+    "mean_ink": 0.1918,
+    "p99": 0.7,
+    "frac_gt_0.5": 0.0311,
+    "valid_px": 5072797
+   },
+   "visual_qa": {
+    "surface": "follows the sheet",
+    "ink": "blobs; one isolated ring-shaped mark ~3.4 mm across in all 14 forward checkpoints, not in the reverse maps; more likely structure than ink (see *Validation*); no rows",
+    "public": true,
+    "held_back": "from the first release (2026-09-23), when PHerc1447 was on the First Letters list; released 2026-09-26"
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250702235910-auto_grown_20250702235910.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250703025628-auto_grown_20250703025628283",
+   "ensemble_row_score": {
+    "score": 8.8,
+    "period_mm": 7.46,
+    "angle_deg": -153.4,
+    "mean_ink": 0.1717,
+    "p99": 0.551,
+    "frac_gt_0.5": 0.0156,
+    "valid_px": 8520399
+   },
+   "visual_qa": {
+    "surface": "follows the sheet",
+    "ink": "bright rings around mask holes (border artifact), blobs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250703025628-auto_grown_20250703025628.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20250703034159-auto_grown_20250703034159599",
+   "ensemble_row_score": {
+    "score": 11.7,
+    "period_mm": 7.15,
+    "angle_deg": -99.8,
+    "mean_ink": 0.1958,
+    "p99": 0.629,
+    "frac_gt_0.5": 0.03,
+    "valid_px": 9534796
+   },
+   "visual_qa": {
+    "surface": "follows the sheet",
+    "ink": "blobs, hole-border arcs; no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20250703034159-auto_grown_20250703034159.jpg"
+  },
+  {
+   "scroll": "PHerc1447",
+   "segment": "20251105093211-z_dbg_gen_00320",
+   "ensemble_row_score": {
+    "score": 6.3,
+    "period_mm": 3.37,
+    "angle_deg": -12.7,
+    "mean_ink": 0.1892,
+    "p99": 0.778,
+    "frac_gt_0.5": 0.0518,
+    "valid_px": 9484766
+   },
+   "visual_qa": {
+    "surface": "on the sheet between many onion-ring spots, where the surface cuts through bumps in the layers",
+    "ink": "blobs; bright curves and rings exactly on the onion rings (artifact); no rows, no letter-like shapes",
+    "public": true
+   },
+   "sheet": "results/sheets/published_PHerc1447_20251105093211-z_dbg_gen_00320.jpg"
+  }
+ ],
+ "census_prediction_outside_mask": [
+  {
+   "scroll": "PHerc0125",
+   "volume": "20250821151825",
+   "level5_shape": [
+    652,
+    263,
+    263
+   ],
+   "pred_lit_vox": 4110411,
+   "lit_outside_mask": 1969833,
+   "share_outside": 0.4792,
+   "seconds": 27
+  },
+  {
+   "scroll": "PHerc0175A",
+   "volume": "20250521115057",
+   "level5_shape": [
+    399,
+    293,
+    293
+   ],
+   "pred_lit_vox": 3724107,
+   "lit_outside_mask": 1900067,
+   "share_outside": 0.5102,
+   "seconds": 27
+  },
+  {
+   "scroll": "PHerc0175B",
+   "volume": "20250521125822",
+   "level5_shape": [
+    497,
+    301,
+    301
+   ],
+   "pred_lit_vox": 6445273,
+   "lit_outside_mask": 2554392,
+   "share_outside": 0.3963,
+   "seconds": 24
+  },
+  {
+   "scroll": "PHerc0191",
+   "volume": "20250821151635",
+   "level5_shape": [
+    594,
+    263,
+    263
+   ],
+   "pred_lit_vox": 4596103,
+   "lit_outside_mask": 1947352,
+   "share_outside": 0.4237,
+   "seconds": 26
+  },
+  {
+   "scroll": "PHerc0211",
+   "volume": "20250821151803",
+   "level5_shape": [
+    607,
+    249,
+    249
+   ],
+   "pred_lit_vox": 3397448,
+   "lit_outside_mask": 1652700,
+   "share_outside": 0.4865,
+   "seconds": 25
+  },
+  {
+   "scroll": "PHerc0257",
+   "volume": "20250821151750",
+   "level5_shape": [
+    590,
+    263,
+    263
+   ],
+   "pred_lit_vox": 3475863,
+   "lit_outside_mask": 1660930,
+   "share_outside": 0.4778,
+   "seconds": 26
+  },
+  {
+   "scroll": "PHerc0268",
+   "volume": "20251110183117",
+   "level5_shape": [
+    464,
+    380,
+    380
+   ],
+   "pred_lit_vox": 9010205,
+   "lit_outside_mask": 3061718,
+   "share_outside": 0.3398,
+   "seconds": 27
+  },
+  {
+   "scroll": "PHerc0306B",
+   "volume": "20250521133212",
+   "level5_shape": [
+    497,
+    277,
+    277
+   ],
+   "pred_lit_vox": 4300910,
+   "lit_outside_mask": 2067820,
+   "share_outside": 0.4808,
+   "seconds": 24
+  },
+  {
+   "scroll": "PHerc0343",
+   "volume": "20250521140437",
+   "level5_shape": [
+    563,
+    269,
+    269
+   ],
+   "pred_lit_vox": 4875952,
+   "lit_outside_mask": 2295186,
+   "share_outside": 0.4707,
+   "seconds": 26
+  },
+  {
+   "scroll": "PHerc0358",
+   "volume": "20250821151737",
+   "level5_shape": [
+    461,
+    244,
+    244
+   ],
+   "pred_lit_vox": 3094353,
+   "lit_outside_mask": 1515011,
+   "share_outside": 0.4896,
+   "seconds": 22
+  },
+  {
+   "scroll": "PHerc0483A",
+   "volume": "20250521140913",
+   "level5_shape": [
+    497,
+    277,
+    277
+   ],
+   "pred_lit_vox": 4056853,
+   "lit_outside_mask": 1944626,
+   "share_outside": 0.4793,
+   "seconds": 25
+  },
+  {
+   "scroll": "PHerc0483B",
+   "volume": "20251124083638",
+   "level5_shape": [
+    372,
+    261,
+    261
+   ],
+   "pred_lit_vox": 3034170,
+   "lit_outside_mask": 1192074,
+   "share_outside": 0.3929,
+   "seconds": 23
+  },
+  {
+   "scroll": "PHerc0490A",
+   "volume": "20250521151210",
+   "level5_shape": [
+    366,
+    285,
+    285
+   ],
+   "pred_lit_vox": 4264325,
+   "lit_outside_mask": 1778616,
+   "share_outside": 0.4171,
+   "seconds": 18
+  },
+  {
+   "scroll": "PHerc0490B",
+   "volume": "20250521151215",
+   "level5_shape": [
+    333,
+    261,
+    261
+   ],
+   "pred_lit_vox": 2907809,
+   "lit_outside_mask": 1360937,
+   "share_outside": 0.468,
+   "seconds": 15
+  },
+  {
+   "scroll": "PHerc0800",
+   "volume": "20250521135224",
+   "level5_shape": [
+    760,
+    309,
+    309
+   ],
+   "pred_lit_vox": 8182235,
+   "lit_outside_mask": 3349039,
+   "share_outside": 0.4093,
+   "seconds": 25
+  },
+  {
+   "scroll": "PHerc0813",
+   "volume": "20250821151723",
+   "level5_shape": [
+    532,
+    249,
+    249
+   ],
+   "pred_lit_vox": 3191734,
+   "lit_outside_mask": 1345706,
+   "share_outside": 0.4216,
+   "seconds": 18
+  },
+  {
+   "scroll": "PHerc0826",
+   "volume": "20250821151701",
+   "level5_shape": [
+    529,
+    256,
+    256
+   ],
+   "pred_lit_vox": 2952269,
+   "lit_outside_mask": 1790568,
+   "share_outside": 0.6065,
+   "seconds": 21
+  },
+  {
+   "scroll": "PHerc0846A",
+   "volume": "20250728152254",
+   "level5_shape": [
+    439,
+    242,
+    242
+   ],
+   "pred_lit_vox": 2568828,
+   "lit_outside_mask": 1324853,
+   "share_outside": 0.5157,
+   "seconds": 18
+  },
+  {
+   "scroll": "PHerc0846B",
+   "volume": "20250804142305",
+   "level5_shape": [
+    436,
+    246,
+    246
+   ],
+   "pred_lit_vox": 2971014,
+   "lit_outside_mask": 1476874,
+   "share_outside": 0.4971,
+   "seconds": 17
+  },
+  {
+   "scroll": "PHerc1203",
+   "volume": "20250820131727",
+   "level5_shape": [
+    594,
+    214,
+    214
+   ],
+   "pred_lit_vox": 3231119,
+   "lit_outside_mask": 1523314,
+   "share_outside": 0.4715,
+   "seconds": 17
+  },
+  {
+   "scroll": "PHerc1218",
+   "volume": "20250521120456",
+   "level5_shape": [
+    727,
+    238,
+    238
+   ],
+   "pred_lit_vox": 3866500,
+   "lit_outside_mask": 1980135,
+   "share_outside": 0.5121,
+   "seconds": 18
+  },
+  {
+   "scroll": "PHerc1447",
+   "volume": "20250521151220",
+   "level5_shape": [
+    760,
+    261,
+    261
+   ],
+   "pred_lit_vox": 4717669,
+   "lit_outside_mask": 2200916,
+   "share_outside": 0.4665,
+   "seconds": 18
+  },
+  {
+   "scroll": "PHerc1545",
+   "volume": "20250821151648",
+   "level5_shape": [
+    656,
+    235,
+    235
+   ],
+   "pred_lit_vox": 3225184,
+   "lit_outside_mask": 1642398,
+   "share_outside": 0.5092,
+   "seconds": 15
+  }
+ ]
+}
