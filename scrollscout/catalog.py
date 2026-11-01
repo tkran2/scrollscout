@@ -81,6 +81,15 @@ class Catalog:
     def scrolls(self) -> list[str]:
         return sorted(self._index or self._live)
 
+    def volumes(self, scroll: str) -> list[str]:
+        """Ids of the scroll's CT volumes."""
+        if self._index:
+            s = self._index.get(scroll, {})
+            ids = [c["id"] for c in s.get("ctVolumes", [])]
+            ids += [v["id"] for sc in s.get("scans", []) for v in sc.get("volumes", [])]
+            return sorted(set(ids))
+        return sorted(self._live.get(scroll, {}).get("volumes", {}))
+
     def volume(self, scroll: str, volume_id: str) -> Volume:
         if self._index:
             return self._volume_from_index(scroll, volume_id)
