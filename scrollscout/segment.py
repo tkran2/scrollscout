@@ -14,7 +14,9 @@ classifies all 20 correctly.
 from __future__ import annotations
 
 import json
+import os
 import re
+import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -94,12 +96,9 @@ def read_obj(path) -> Surface:
     return Surface(path.stem, xyz[:, ::-1].copy(), uv, None, {}, str(path))
 
 
-def fetch_segment(url: str) -> Path:
-    """Download a tifxyz from the open-data bucket into the cache and return its folder.
-
-    ``url`` is an s3:// or https:// address of a ``.tifxyz`` folder, or of a segment folder
-    (``<scroll>/segments/<id>/``) whose ``mesh/`` holds one.
-    """
+def segment_key(url: str) -> str:
+    """The bucket key (``.../name.tifxyz/``) of the tifxyz behind an s3:// or https:// address of a
+    ``.tifxyz`` folder, or of a segment folder (``<scroll>/segments/<id>/``) whose ``mesh/`` holds one."""
     https = to_https(url).rstrip("/") + "/"
     if not https.startswith(BUCKET_HTTPS):
         raise ValueError(f"{url}: not in the open-data bucket")
@@ -110,7 +109,16 @@ def fetch_segment(url: str) -> Path:
         if not found:
             raise FileNotFoundError(f"{url}: no .tifxyz folder found")
         key = found[0]
-    dst = default_cache_dir() / "segments" / key.rstrip("/")
+    return key
+
+
+def fetch_segment(url: str) -> Path:
+    """Download a tifxyz from the open-data bucket into the cache and return its folder."""
+    key = segment_key(url)
+    return _download_tifxyz(key, default_cache_dir() / "segments" / key.rstrip("/"))
+
+
+def _download_tifxyz(key: str, dst: Path) -> Path:
     dst.mkdir(parents=True, exist_ok=True)
     for f in ("x.tif", "y.tif", "z.tif", "meta.json"):
         p = dst / f
@@ -126,9 +134,13 @@ def fetch_segment(url: str) -> Path:
 
 def load_surface(src: str) -> Surface:
     if re.match(r"^(s3|https?)://", src):
-        folder = fetch_segment(src)
-        s = read_tifxyz(folder)
-        s.source = str(folder)
+        key = segment_key(src)
+        if os.environ.get("SCROLLSCOUT_NO_CACHE"):  # stream only: read from a temporary folder
+            with tempfile.TemporaryDirectory() as tmp:
+                s = read_tifxyz(_download_tifxyz(key, Path(tmp)))
+        else:
+            s = read_tifxyz(_download_tifxyz(key, default_cache_dir() / "segments" / key.rstrip("/")))
+        s.source = f"{BUCKET_HTTPS}/{key}"  # names the scroll, the segment and the volume
         m = re.search(r"segments/([^/]+)/(?:mesh/)?[^/]+\.tifxyz/?$", s.source)
         if m:
             s.name = m.group(1)

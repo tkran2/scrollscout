@@ -115,3 +115,35 @@ def test_read_obj_negative_indices_count_back_from_the_last_vertex(tmp_path):
     q = tmp_path / "abs.obj"
     q.write_text("v 10 20 30\nv 11 20 30\nv 10 21 31\nvt 0 0\nvt 1 0\nvt 0 1\nf 1/1 2/2 3/3\n")
     assert read_obj(p).uv.tolist() == read_obj(q).uv.tolist() == [[0, 0], [0, 1], [1, 0]]
+
+
+def fake_bucket(monkeypatch):
+    """Serve one tifxyz segment from memory in place of the open-data bucket."""
+    import io
+
+    from scrollscout import segment
+
+    key = "PHerc0800/segments/seg1/mesh/seg1-on-20250521135224-8.64um.tifxyz/"
+    r, c = np.indices((20, 30)).astype(np.float32)
+    files = {}
+    for name, a in zip("xyz", (3000 + 20 * c, 5000 + 0 * c, 8000 + 20 * r)):
+        buf = io.BytesIO()
+        tifffile.imwrite(buf, a)
+        files[f"{segment.BUCKET_HTTPS}/{key}{name}.tif"] = buf.getvalue()
+    files[f"{segment.BUCKET_HTTPS}/{key}meta.json"] = b'{"format": "tifxyz"}'
+    monkeypatch.setattr(segment, "_get", lambda url, timeout=60.0: files.get(url))
+    monkeypatch.setattr(segment, "list_prefixes",
+                        lambda prefix: [key] if prefix == "PHerc0800/segments/seg1/mesh/" else [])
+
+
+def test_no_cache_leaves_nothing_on_disk(tmp_path, monkeypatch):
+    fake_bucket(monkeypatch)
+    monkeypatch.setenv("SCROLLSCOUT_CACHE", str(tmp_path / "cache"))
+    monkeypatch.setenv("SCROLLSCOUT_NO_CACHE", "1")
+    s = load_surface("s3://vesuvius-challenge-open-data/PHerc0800/segments/seg1/")
+    assert len(s.zyx) == 20 * 30 and s.name == "seg1"
+    assert not (tmp_path / "cache").exists()
+    assert infer_volume(s, Catalog.load()).volume == "20250521135224"  # still read from the bucket key
+    monkeypatch.delenv("SCROLLSCOUT_NO_CACHE")
+    load_surface("s3://vesuvius-challenge-open-data/PHerc0800/segments/seg1/")
+    assert len(list((tmp_path / "cache").rglob("*.tif"))) == 3
