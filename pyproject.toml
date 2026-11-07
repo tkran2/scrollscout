@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scrollscout"
-version = "0.2.1"
+version = "0.2.2"
 description = "Find where Herculaneum scroll papyrus is clean enough to trace, from public CT data, on a laptop CPU."
 readme = "README.md"
 license = { text = "MIT" }

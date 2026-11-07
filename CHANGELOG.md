@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.2 (7 November 2026)
+
+- `--quiet` hides the per-point progress lines.
+- Counts on the command line (`--points`, `--workers`, `--step`, `--size`, `--top`) must be whole
+  numbers of at least 1, with a clear error otherwise.
+- More offline tests, 43 in all: a segment with no valid nodes, how check-segment picks the scan when a
+  segment does not name it, every way of naming a segment, and that the package and pyproject versions
+  agree.
+- Every public function has a docstring.
+- CI lints with pyflakes and caches pip downloads; Dependabot keeps the GitHub Actions up to date.
+- New `CONTRIBUTING.md`, issue templates, a Makefile (`make check`), and README sections on
+  troubleshooting, citing and contributing.
+
 ## 0.2.1 (5 November 2026)
 
 - `check-segment --fail-on-cross` exits with status 1 unless every segment likely follows its sheet, so a
