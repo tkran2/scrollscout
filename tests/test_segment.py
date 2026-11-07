@@ -107,3 +107,11 @@ def test_no_papyrus_flag():
     assert not no_papyrus({"features": {"ct_valid": 0.6}})
     assert not no_papyrus({"features": {"error": "timeout"}})
     assert not no_papyrus({"score": 1.0})
+
+
+def test_read_obj_negative_indices_count_back_from_the_last_vertex(tmp_path):
+    p = tmp_path / "rel.obj"
+    p.write_text("v 10 20 30\nv 11 20 30\nv 10 21 31\nvt 0 0\nvt 1 0\nvt 0 1\nf -3/-3 -2/-2 -1/-1\n")
+    q = tmp_path / "abs.obj"
+    q.write_text("v 10 20 30\nv 11 20 30\nv 10 21 31\nvt 0 0\nvt 1 0\nvt 0 1\nf 1/1 2/2 3/3\n")
+    assert read_obj(p).uv.tolist() == read_obj(q).uv.tolist() == [[0, 0], [0, 1], [1, 0]]

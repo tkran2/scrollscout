@@ -63,6 +63,11 @@ def read_obj(path) -> Surface:
     """Vertices of an OBJ mesh (x y z in level-0 voxels); texture coordinates for the map when present."""
     path = Path(path)
     v, vt, v2t = [], [], {}
+
+    def index(i: str, n: int) -> int:  # OBJ indices start at 1; negative ones count back from the last defined
+        k = int(i)
+        return k - 1 if k > 0 else n + k
+
     with open(path) as f:
         for line in f:
             if line.startswith("v "):
@@ -73,7 +78,7 @@ def read_obj(path) -> Surface:
                 for corner in line.split()[1:]:
                     parts = corner.split("/")
                     if len(parts) > 1 and parts[1]:
-                        v2t.setdefault(int(parts[0]) - 1, int(parts[1]) - 1)
+                        v2t.setdefault(index(parts[0], len(v)), index(parts[1], len(vt)))
     xyz = np.array(v, float)
     if not len(xyz):
         raise ValueError(f"{path}: no vertices")
