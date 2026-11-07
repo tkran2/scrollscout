@@ -52,7 +52,7 @@ them, are worth ink inference).
 **Census.** <!-- CENSUS_LINE -->`check-segment` on every published segment it can check (81 segments on 5 scrolls, all on 8.6–9.4 µm scans): 45 likely follow their sheet. The list (census/SEGMENTS.md, census/segments.csv) says which segments are worth ink detection or training first.<!-- /CENSUS_LINE -->
 
 **Use.** `pip install` the repo, then `scrollscout check-segment | near | point | scan | seeds |
-export-vc3d | atlas`. 30 offline unit tests run on every push (GitHub Actions, Python 3.10 to 3.13);
+export-vc3d | atlas`. 35 offline unit tests run on every push (GitHub Actions, Python 3.10 to 3.13);
 every number above is reproduced by the scripts listed in the README.
 
 ---

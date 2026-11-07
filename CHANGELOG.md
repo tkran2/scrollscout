@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1 (5 November 2026)
+
+- `check-segment --fail-on-cross` exits with status 1 unless every segment likely follows its sheet, so a
+  pipeline can stop before running ink detection on a bad segment.
+- Fix: OBJ meshes with negative (relative) face indices, which the format allows, now read correctly.
+- Fix: with `SCROLLSCOUT_NO_CACHE=1`, `check-segment` no longer writes segment meshes to the cache.
+- Offline tests of the command line (`check-segment` with several segments, CSV and `--fail-on-cross`;
+  `near`): 35 tests in all.
+
 ## 0.2.0 (1 November 2026)
 
 **New: check a segment before ink detection.** `scrollscout check-segment` takes any traced segment (a

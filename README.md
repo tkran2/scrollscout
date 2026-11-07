@@ -298,7 +298,7 @@ python -I scripts/atlas_stability.py                                            
 python -I scripts/summarize_atlas.py atlas
 python -I scripts/update_docs.py                                                  # README atlas section, VC3D files
 python -I scripts/make_figures.py
-python -m pytest tests                                                            # 30 tests, offline
+python -m pytest tests                                                            # 35 tests, offline
 ```
 
 ## Limitations
