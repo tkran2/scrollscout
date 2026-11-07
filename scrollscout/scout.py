@@ -21,6 +21,9 @@ VALIDATED_UM = (7.5, 10.0)  # the score was built and tested on 8.64 um and 9.36
 
 
 def validated_scan(vol: Volume) -> bool:
+    """Whether the volume's voxel size lies in the range the score was validated on (the 8.64 um and 9.36 um
+    scans).
+    """
     return VALIDATED_UM[0] <= float(vol.voxel_um) <= VALIDATED_UM[1]
 
 
@@ -33,6 +36,10 @@ def prediction_offset(ct_url: str, pred_url: str) -> int:
 
 
 def features_at(vol: Volume, zyx0, level: int = LEVEL, half: int = HALF) -> dict:
+    """Scout features of the cube around one point. zyx0 is in level-0 voxels (z, y, x); a cube of side 2 * half
+    is read from the CT and from the surface prediction at pyramid `level`, and the CT and prediction
+    features come back as one dict.
+    """
     f = 2**level
     center = [v / f for v in zyx0]
     k = prediction_offset(vol.ct, vol.surface)
@@ -59,6 +66,10 @@ def _job(args):
 
 
 def features_at_many(vol: Volume, points, workers: int = 4, level: int = LEVEL, half: int = HALF, log=None):
+    """features_at for many points, in `workers` processes. Returns [{'zyx', 'features'}] in input order; a point
+    that fails gets {'error': ...} instead of stopping the run, and `log` gets one progress line per
+    point.
+    """
     rows = []
     with ProcessPoolExecutor(workers) as pool:
         for i, (p, f) in enumerate(pool.map(_job, [(vol, p, level, half) for p in points])):
@@ -76,6 +87,7 @@ class Calibration:
 
     @classmethod
     def from_rows(cls, feature_rows: list[dict]) -> "Calibration":
+        """A calibration from reference feature rows: the mean and standard deviation of each score term."""
         stats = {}
         for name, _ in SCORE_TERMS_SIGNED:
             x = np.array([r.get(name, np.nan) for r in feature_rows], float)
@@ -84,12 +96,17 @@ class Calibration:
 
     @classmethod
     def load(cls, path) -> "Calibration":
+        """Read a calibration.json."""
         return cls(json.loads(Path(path).read_text()))
 
     def save(self, path):
+        """Write the calibration as JSON."""
         Path(path).write_text(json.dumps(self.stats, indent=1))
 
     def score(self, feats: dict) -> float:
+        """The scout score of one point: the mean of the signed z-scores of its finite score terms (NaN if there
+        are none). Higher is cleaner; above 0.63 counts as clean.
+        """
         zs = []
         for name, sign in SCORE_TERMS_SIGNED:
             v = feats.get(name)

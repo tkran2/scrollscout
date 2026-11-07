@@ -30,6 +30,10 @@ SCORE_TERMS = tuple(f"{'+' if s > 0 else '-'}{k}" for k, s in SCORE_TERMS_SIGNED
 
 
 def combined_score(feature_rows: list[dict], reference: list[dict] | None = None, terms=SCORE_TERMS_SIGNED) -> np.ndarray:
+    """Scores for many feature rows at once: each term is z-scored against `reference` (default: the rows
+    themselves), signed so that higher is cleaner, and the finite terms are averaged. NaN where no term is
+    finite.
+    """
     ref = reference if reference is not None else feature_rows
     total = np.zeros(len(feature_rows))
     count = np.zeros(len(feature_rows))
