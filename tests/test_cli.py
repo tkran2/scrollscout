@@ -87,3 +87,11 @@ def test_near_ranks_the_grid_around_a_target(tmp_path, monkeypatch, capsys):
     res = json.loads(out.read_text())
     assert len(res["points"]) == 27
     assert all(s["xyz"][0] == 800 for s in res["summary"]["seeds"])
+
+
+@pytest.mark.parametrize("bad", [["--points", "0"], ["--workers", "-2"], ["--points", "many"]])
+def test_numeric_options_must_be_positive_whole_numbers(bad, capsys):
+    with pytest.raises(SystemExit) as e:
+        main(["check-segment", "somewhere.tifxyz", *bad])
+    err = capsys.readouterr().err
+    assert e.value.code == 2 and ("at least 1" in err or "whole number" in err)

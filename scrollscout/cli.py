@@ -27,6 +27,17 @@ def _log(msg):
     print(msg, file=sys.stderr, flush=True)
 
 
+def _positive(text: str) -> int:
+    """argparse type: a whole number of at least 1."""
+    try:
+        v = int(text)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"{text!r} is not a whole number") from None
+    if v < 1:
+        raise argparse.ArgumentTypeError(f"must be at least 1, got {v}")
+    return v
+
+
 def _warn_scan(vol):
     from .scout import validated_scan
 
@@ -250,14 +261,14 @@ def main(argv=None):
     p = sub.add_parser("scan", help="sample and score points through one scroll volume, pick seeds")
     p.add_argument("scroll")
     p.add_argument("volume")
-    p.add_argument("--points", type=int, default=64)
-    p.add_argument("--workers", type=int, default=4)
+    p.add_argument("--points", type=_positive, default=64)
+    p.add_argument("--workers", type=_positive, default=4)
     p.add_argument("--out")
     p.set_defaults(fn=cmd_scan)
 
     p = sub.add_parser("seeds", help="print the seeds of a scan result and commands to grow patches there")
     p.add_argument("file")
-    p.add_argument("--top", type=int, default=5)
+    p.add_argument("--top", type=_positive, default=5)
     p.set_defaults(fn=cmd_seeds)
 
     p = sub.add_parser("export-vc3d", help="write a scan result as a VC3D point-collections file (colour-coded points and seeds)")
@@ -271,9 +282,9 @@ def main(argv=None):
     p.add_argument("x", type=int)
     p.add_argument("y", type=int)
     p.add_argument("z", type=int)
-    p.add_argument("--step", type=int, default=300, help="grid spacing in level-0 voxels (default 300)")
-    p.add_argument("--size", type=int, default=3, help="points per side of the grid (default 3: 27 points)")
-    p.add_argument("--workers", type=int, default=4)
+    p.add_argument("--step", type=_positive, default=300, help="grid spacing in level-0 voxels (default 300)")
+    p.add_argument("--size", type=_positive, default=3, help="points per side of the grid (default 3: 27 points)")
+    p.add_argument("--workers", type=_positive, default=4)
     p.add_argument("--out")
     p.set_defaults(fn=cmd_near)
 
@@ -283,8 +294,8 @@ def main(argv=None):
                    "in the open data (several at once: e.g. a VC3D paths/* folder)")
     p.add_argument("--scroll", help="e.g. PHerc0800 (inferred from the path when it names the scroll)")
     p.add_argument("--volume", help="CT volume id the segment was traced on (inferred from meta.json or the path)")
-    p.add_argument("--points", type=int, default=12, help="points to score, spread over the surface (default 12)")
-    p.add_argument("--workers", type=int, default=4)
+    p.add_argument("--points", type=_positive, default=12, help="points to score, spread over the surface (default 12)")
+    p.add_argument("--workers", type=_positive, default=4)
     p.add_argument("--json", help="write every point's score and features here (a folder, with several segments)")
     p.add_argument("--png", help="draw a map of the segment coloured by score, needs matplotlib (a folder, with "
                    "several segments)")
@@ -297,8 +308,8 @@ def main(argv=None):
     p = sub.add_parser("atlas", help="scan every volume eligible for a prize and rank them")
     p.add_argument("--prize", default="first-letters-2027")
     p.add_argument("--eligibility", help="prizeEligibility.json (default: bundled 31 Oct 2026 snapshot)")
-    p.add_argument("--points", type=int, default=64)
-    p.add_argument("--workers", type=int, default=4)
+    p.add_argument("--points", type=_positive, default=64)
+    p.add_argument("--workers", type=_positive, default=4)
     p.add_argument("--out", default="atlas")
     p.set_defaults(fn=cmd_atlas)
 
