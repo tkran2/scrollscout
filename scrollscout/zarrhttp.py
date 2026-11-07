@@ -44,6 +44,7 @@ def to_https(url: str) -> str:
 
 
 def default_cache_dir() -> Path:
+    """Where downloaded chunks are cached: $SCROLLSCOUT_CACHE, or ~/.cache/scrollscout."""
     return Path(os.environ.get("SCROLLSCOUT_CACHE", Path.home() / ".cache" / "scrollscout"))
 
 
@@ -79,6 +80,7 @@ class ZArray:
 
     @classmethod
     def open(cls, store_url: str, level: int | str = 0, cache_dir: Path | None = None) -> "ZArray":
+        """Open pyramid `level` of an OME-Zarr store (s3:// or https://) by reading its .zarray."""
         base = f"{to_https(store_url)}/{level}"
         meta_raw = _get(f"{base}/.zarray")
         if meta_raw is None:
@@ -154,5 +156,8 @@ class ZArray:
         return out
 
     def read_centered(self, center_zyx, half: int, **kw) -> np.ndarray:
+        """The cube of side 2 * half around a point given in this level's voxels, clipped to the array (so
+        smaller near its edges).
+        """
         z, y, x = (int(round(v)) for v in center_zyx)
         return self.read(z - half, z + half, y - half, y + half, x - half, x + half, **kw)

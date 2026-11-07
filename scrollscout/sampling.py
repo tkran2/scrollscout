@@ -16,6 +16,9 @@ from .zarrhttp import ZArray
 
 @dataclass
 class CoarseScroll:
+    """A whole scroll at a coarse pyramid level: its CT, papyrus masks, and the centre and outer radius of the
+    papyrus at each height, used to place sample points.
+    """
     level: int
     factor: int  # level-0 voxels per coarse voxel
     vol: np.ndarray  # coarse CT (z, y, x), uint8
@@ -26,6 +29,7 @@ class CoarseScroll:
     z_extent: tuple[int, int]  # first/last coarse z with papyrus
 
     def to_level0(self, zyx) -> np.ndarray:
+        """Coarse voxel coordinates to level-0 voxel coordinates (voxel centres)."""
         return (np.asarray(zyx, float) + 0.5) * self.factor
 
     def radius_fraction(self, zyx0) -> float:
@@ -45,12 +49,16 @@ class CoarseScroll:
         return bool(self.mask[tuple(idx)])
 
     def z_fraction(self, zyx0) -> float:
+        """Height of a level-0 point within the papyrus (0 = bottom, 1 = top)."""
         z = zyx0[0] / self.factor
         a, b = self.z_extent
         return float((z - a) / max(1, b - a))
 
 
 def load_coarse(ct_url: str, level: int = 5, erode_vox: int = 2) -> CoarseScroll:
+    """Read a scroll's CT at a coarse pyramid level (level 5: 32 times smaller in each direction) and find its
+    papyrus, its axis and its outer radius at each height.
+    """
     za = ZArray.open(ct_url, level)
     vol = za.read(0, za.shape[0], 0, za.shape[1], 0, za.shape[2])
     factor = 2**level

@@ -25,6 +25,9 @@ BUCKET_S3 = "s3://vesuvius-challenge-open-data"
 
 @dataclass
 class Volume:
+    """One CT volume: its scroll and id, voxel size (um), beam energy (keV), and the addresses of the CT and of
+    its surface prediction (None if there is none).
+    """
     scroll: str
     volume: str
     voxel_um: float
@@ -54,6 +57,9 @@ def discover_surface(scroll: str, volume_id: str) -> str | None:
 
 
 class Catalog:
+    """The scrolls and volumes of the open data, from the bundled snapshot, a catalog file, or the live
+    metadata.json.
+    """
     def __init__(self, data: dict):
         self._index = {}
         self._live = {}
@@ -66,6 +72,9 @@ class Catalog:
 
     @classmethod
     def load(cls, path: str | Path | None = None, live: bool = False) -> "Catalog":
+        """Read a catalog: a file (data-browser index.json or open-data metadata.json, gzipped or not), the live
+        open-data metadata, or by default the bundled 31 October 2026 snapshot.
+        """
         if path:
             raw = Path(path).read_bytes()
         elif live:
@@ -79,6 +88,7 @@ class Catalog:
         return cls(json.loads(raw))
 
     def scrolls(self) -> list[str]:
+        """Ids of the scrolls in the catalog."""
         return sorted(self._index or self._live)
 
     def volumes(self, scroll: str) -> list[str]:
@@ -91,6 +101,7 @@ class Catalog:
         return sorted(self._live.get(scroll, {}).get("volumes", {}))
 
     def volume(self, scroll: str, volume_id: str) -> Volume:
+        """The Volume with this id (KeyError if the scroll has none)."""
         if self._index:
             return self._volume_from_index(scroll, volume_id)
         return self._volume_from_live(scroll, volume_id)
