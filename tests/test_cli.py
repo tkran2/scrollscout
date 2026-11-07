@@ -108,3 +108,15 @@ def test_quiet_hides_per_point_progress(tmp_path, monkeypatch, capsys):
     main(["--quiet", "check-segment", str(good), *VOL, "--workers", "1"])
     captured = capsys.readouterr()
     assert "[1/12]" not in captured.err and "LIKELY FOLLOWS THE SHEET" in captured.out
+
+
+def test_a_segment_with_no_valid_nodes_is_reported_not_crashed(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(segment, "features_at_many", fake_features)
+    empty = tmp_path / "empty.tifxyz"
+    empty.mkdir()
+    for name in "xyz":
+        tifffile.imwrite(empty / f"{name}.tif", np.full((5, 5), -1, np.float32))
+    png = tmp_path / "empty.png"
+    with pytest.raises(SystemExit, match="1 of 1"):
+        main(["check-segment", str(empty), *VOL, "--workers", "1", "--png", str(png), "--fail-on-cross"])
+    assert "UNKNOWN (NO SCORABLE POINTS)" in capsys.readouterr().out
