@@ -27,6 +27,11 @@ def _log(msg):
     print(msg, file=sys.stderr, flush=True)
 
 
+def _progress(a):
+    """Where per-point progress goes: stderr, or nowhere with --quiet."""
+    return None if a.quiet else _log
+
+
 def _positive(text: str) -> int:
     """argparse type: a whole number of at least 1."""
     try:
@@ -64,7 +69,7 @@ def cmd_scan(a):
 
     vol = _catalog(a).volume(a.scroll, a.volume)
     _warn_scan(vol)
-    res = scan_volume(vol, _calibration(a.calibration), a.points, a.workers, log=_log)
+    res = scan_volume(vol, _calibration(a.calibration), a.points, a.workers, log=_progress(a))
     out = Path(a.out or f"{a.scroll}_{a.volume}_scout.json")
     out.write_text(json.dumps(res, indent=1, default=float))
     s = res["summary"]
@@ -111,7 +116,7 @@ def cmd_near(a):
     vol = _catalog(a).volume(a.scroll, a.volume)
     _warn_scan(vol)
     cal = _calibration(a.calibration)
-    res = scan_near(vol, cal, (a.z, a.y, a.x), a.step, a.size, a.workers, log=_log)
+    res = scan_near(vol, cal, (a.z, a.y, a.x), a.step, a.size, a.workers, log=_progress(a))
     s = res["summary"]
     thr = cal.stats.get("_good_threshold", {}).get("value", 0.63)
     out = Path(a.out or f"{a.scroll}_{a.volume}_near_{a.x}_{a.y}_{a.z}.json")
@@ -144,7 +149,7 @@ def _check_one(src, a, cat, cal, multi):
     _warn_scan(vol)
     _log(f"{surf.name}: {len(surf.zyx):,} nodes on {vol.scroll} {vol.volume} ({vol.voxel_um} um); "
          f"scoring {min(a.points, len(surf.zyx))} points")
-    res = check_segment(surf, vol, cal, a.points, a.workers, log=_log)
+    res = check_segment(surf, vol, cal, a.points, a.workers, log=_progress(a))
     s = res["summary"]
     print(f"{s['segment']}: {s['verdict'].upper()}")
     if s["errors"]:
@@ -227,7 +232,7 @@ def cmd_atlas(a):
         if dst.exists():
             res = json.loads(dst.read_text())
         else:
-            res = scan_volume(cat.volume(e["scroll"], e["volume"]), cal, a.points, a.workers, log=_log)
+            res = scan_volume(cat.volume(e["scroll"], e["volume"]), cal, a.points, a.workers, log=_progress(a))
             dst.write_text(json.dumps(res, indent=1, default=float))
         rows.append(res["summary"])
     rows.sort(key=lambda s: -s["score_p90"])
@@ -248,6 +253,7 @@ def main(argv=None):
     ap.add_argument("--catalog", help="catalog file (data-browser index.json or open-data metadata.json)")
     ap.add_argument("--live", action="store_true", help="use the live open-data catalog instead of the bundled snapshot")
     ap.add_argument("--calibration", help="calibration.json (default: bundled)")
+    ap.add_argument("-q", "--quiet", action="store_true", help="hide the per-point progress lines")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("point", help="score one point (level-0 voxel coordinates)")

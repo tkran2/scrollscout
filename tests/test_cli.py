@@ -34,6 +34,9 @@ def tifxyz(folder, x0):
 
 def fake_features(vol, pts, workers=4, log=None):
     """Clean papyrus left of x = 6000, crushed papyrus right of it."""
+    for i, p in enumerate(pts, 1):
+        if log:
+            log(f"  [{i}/{len(pts)}] zyx={p}")
     return [{"zyx": [int(v) for v in p], "features": feats_for(1.2 if p[2] < 6000 else -1.0)} for p in pts]
 
 
@@ -95,3 +98,13 @@ def test_numeric_options_must_be_positive_whole_numbers(bad, capsys):
         main(["check-segment", "somewhere.tifxyz", *bad])
     err = capsys.readouterr().err
     assert e.value.code == 2 and ("at least 1" in err or "whole number" in err)
+
+
+def test_quiet_hides_per_point_progress(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(segment, "features_at_many", fake_features)
+    good = tifxyz(tmp_path / "good.tifxyz", 3000)
+    main(["check-segment", str(good), *VOL, "--workers", "1"])
+    assert "[1/12]" in capsys.readouterr().err
+    main(["--quiet", "check-segment", str(good), *VOL, "--workers", "1"])
+    captured = capsys.readouterr()
+    assert "[1/12]" not in captured.err and "LIKELY FOLLOWS THE SHEET" in captured.out
