@@ -157,3 +157,21 @@ def test_infer_volume_falls_back_to_the_only_volume_with_a_prediction(tmp_path):
     with pytest.raises(ValueError, match="20250804134230, 20260309142202"):
         infer_volume(seg, cat)
     assert infer_volume(seg, cat, volume="20260309142202").volume == "20260309142202"
+
+
+def test_segment_key_accepts_every_way_of_naming_a_segment(monkeypatch):
+    from scrollscout import segment
+
+    key = "PHerc0800/segments/seg1/mesh/seg1-on-20250521135224-8.64um.tifxyz/"
+    monkeypatch.setattr(segment, "list_prefixes",
+                        lambda prefix: [key] if prefix == "PHerc0800/segments/seg1/mesh/" else [])
+    https = "https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com"
+    for url in ("s3://vesuvius-challenge-open-data/PHerc0800/segments/seg1/",
+                "s3://vesuvius-challenge-open-data/PHerc0800/segments/seg1",
+                f"{https}/PHerc0800/segments/seg1/",
+                f"s3://vesuvius-challenge-open-data/{key}"):
+        assert segment.segment_key(url) == key
+    with pytest.raises(FileNotFoundError):
+        segment.segment_key("s3://vesuvius-challenge-open-data/PHerc0800/segments/nothing-here/")
+    with pytest.raises(ValueError, match="not in the open-data bucket"):
+        segment.segment_key("https://example.com/PHerc0800/segments/seg1/")
