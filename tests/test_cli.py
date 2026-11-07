@@ -120,3 +120,16 @@ def test_a_segment_with_no_valid_nodes_is_reported_not_crashed(tmp_path, monkeyp
     with pytest.raises(SystemExit, match="1 of 1"):
         main(["check-segment", str(empty), *VOL, "--workers", "1", "--png", str(png), "--fail-on-cross"])
     assert "UNKNOWN (NO SCORABLE POINTS)" in capsys.readouterr().out
+
+
+def test_version_matches_pyproject(capsys):
+    import re
+    from pathlib import Path
+
+    from scrollscout import __version__
+
+    pyproject = (Path(__file__).resolve().parents[1] / "pyproject.toml").read_text()
+    assert re.search(r'^version = "([^"]+)"', pyproject, re.M).group(1) == __version__
+    with pytest.raises(SystemExit):
+        main(["--version"])
+    assert capsys.readouterr().out.strip() == f"scrollscout {__version__}"
