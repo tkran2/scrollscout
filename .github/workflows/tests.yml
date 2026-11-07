@@ -20,6 +20,8 @@ jobs:
           cache-dependency-path: pyproject.toml
       - name: Install
         run: pip install -e ".[figures,test]"
+      - name: Lint
+        run: python -m pyflakes scrollscout scripts tests
       - name: Unit tests (offline)
         run: python -m pytest -q tests
       - name: Command line smoke test

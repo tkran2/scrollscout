@@ -20,7 +20,7 @@ dependencies = [
 
 [project.optional-dependencies]
 figures = ["matplotlib>=3.7"]
-test = ["pytest>=7"]
+test = ["pytest>=7", "pyflakes>=3"]
 
 [project.urls]
 Homepage = "https://github.com/tkran2/scrollscout"
