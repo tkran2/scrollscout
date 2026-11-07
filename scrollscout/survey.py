@@ -31,6 +31,9 @@ def label_from_verdict(text: str) -> int:
 
 
 def load_patches(results_json: str | Path) -> list[dict]:
+    """The survey's patches, one dict each: scroll, volume, seed (z, y, x), scan, area, the survey's verdict and
+    its ordinal label, and the path of the patch's tifxyz.
+    """
     r = json.loads(Path(results_json).read_text())
     rows = []
     for p in r["patches"]:

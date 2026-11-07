@@ -20,6 +20,9 @@ def auc(scores: np.ndarray, positive: np.ndarray) -> float:
 
 
 def bootstrap_ci(fn, *arrays, n: int = 2000, seed: int = 0, alpha: float = 0.05):
+    """Percentile bootstrap confidence interval (1 - alpha) of fn(*arrays), resampling the rows of all arrays
+    together, n times.
+    """
     rng = np.random.default_rng(seed)
     arrays = [np.asarray(a) for a in arrays]
     m = len(arrays[0])
@@ -51,6 +54,7 @@ def auc_permutation_p(scores, positive, n: int = 5000, seed: int = 0) -> float:
 
 
 def spearman(a, b) -> float:
+    """Spearman rank correlation over the pairs where both values are finite (NaN with fewer than 5 such pairs)."""
     a = np.asarray(a, float)
     b = np.asarray(b, float)
     ok = np.isfinite(a) & np.isfinite(b)
@@ -60,6 +64,7 @@ def spearman(a, b) -> float:
 
 
 def zscore(x: np.ndarray, ref: np.ndarray | None = None) -> np.ndarray:
+    """(x - mean) / SD, with the mean and SD taken from `ref` (default: x itself), ignoring NaNs."""
     ref = x if ref is None else ref
     mu, sd = np.nanmean(ref), np.nanstd(ref)
     return (x - mu) / (sd if sd > 0 else 1.0)
