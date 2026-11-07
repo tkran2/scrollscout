@@ -147,3 +147,13 @@ def test_no_cache_leaves_nothing_on_disk(tmp_path, monkeypatch):
     monkeypatch.delenv("SCROLLSCOUT_NO_CACHE")
     load_surface("s3://vesuvius-challenge-open-data/PHerc0800/segments/seg1/")
     assert len(list((tmp_path / "cache").rglob("*.tif"))) == 3
+
+
+def test_infer_volume_falls_back_to_the_only_volume_with_a_prediction(tmp_path):
+    cat = Catalog.load()
+    seg = load_surface(str(write_tifxyz(tmp_path / "PHerc0125" / "seg.tifxyz")))  # no target_volume, no -on-
+    assert infer_volume(seg, cat).volume == "20250821151825"
+    seg = load_surface(str(write_tifxyz(tmp_path / "PHerc0814" / "seg.tifxyz")))  # two scans with predictions
+    with pytest.raises(ValueError, match="20250804134230, 20260309142202"):
+        infer_volume(seg, cat)
+    assert infer_volume(seg, cat, volume="20260309142202").volume == "20260309142202"
