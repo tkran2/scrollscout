@@ -321,6 +321,26 @@ python -m pytest tests                                                          
   prediction is stored coarser than the CT's level 1 (the 2.2 µm PHerc. 500P2 scan), points are not
   scored rather than scored wrongly.
 
+## Troubleshooting
+
+- **The cache grows large.** Chunks are cached in `~/.cache/scrollscout`, about 20 MB per scored point.
+  Move it with `SCROLLSCOUT_CACHE=/big/disk`, stream without caching with `SCROLLSCOUT_NO_CACHE=1`, or
+  delete the folder at any time.
+- **"cannot tell which scroll" or "which volume".** Local tifxyz folders from VC3D do not always record
+  their scan. Pass `--scroll` and `--volume`; the error lists the volumes that have a surface prediction.
+- **"note: ... is a 2.215 um scan".** The score was validated on 8.64 µm and 9.36 µm scans only, so
+  numbers on other resolutions are unvalidated.
+- **"could not score N point(s)".** The message gives the reason. Points with no papyrus around them in
+  the CT are listed separately: the segment leaves the scroll or the scan there.
+- **A download fails.** Everything comes from the public bucket over HTTPS, so the usual `HTTPS_PROXY`
+  settings apply; cached chunks are reused when you run the command again.
+
+## Citing and contributing
+
+If Scroll Scout helps your work, cite it with [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this
+repository" button turns it into BibTeX). Bug reports, wrong verdicts and pull requests are welcome:
+see [`CONTRIBUTING.md`](CONTRIBUTING.md); `make check` runs the linter and the tests.
+
 ## Credits and data
 
 - CT scans and surface predictions: [Vesuvius Challenge](https://scrollprize.org) open data, CC BY-NC 4.0.
