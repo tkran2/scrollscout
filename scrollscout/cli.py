@@ -195,6 +195,10 @@ def cmd_check_segment(a):
             for s in done:
                 w.writerow({**s, "no_papyrus": len(s["no_papyrus"])})
         print(f"summary -> {a.csv}")
+    if a.fail_on_cross:
+        bad = len(a.segment) - sum(s["verdict"].endswith("follows the sheet") for s in done)
+        if bad:
+            raise SystemExit(f"check failed: {bad} of {len(a.segment)} segment(s) not likely to follow the sheet")
 
 
 def cmd_atlas(a):
@@ -286,6 +290,8 @@ def main(argv=None):
                    "several segments)")
     p.add_argument("--vc3d", help="write the scored points as VC3D point collections (a folder, with several segments)")
     p.add_argument("--csv", help="write one summary row per segment here")
+    p.add_argument("--fail-on-cross", action="store_true", help="exit with status 1 unless every segment likely "
+                   "follows the sheet (to stop a pipeline before ink detection)")
     p.set_defaults(fn=cmd_check_segment)
 
     p = sub.add_parser("atlas", help="scan every volume eligible for a prize and rank them")

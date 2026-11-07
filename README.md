@@ -126,6 +126,14 @@ of being found after it:
 ![check-segment maps](figures/fig_segment_check.png)
 
 `--json` writes every point's score and features; `--vc3d` writes the points as VC3D point collections.
+Several segments at once (`scrollscout check-segment paths/* --csv triage.csv`) give a ranked table.
+In a pipeline, `--fail-on-cross` makes the command exit with status 1 unless every segment likely follows
+its sheet, so ink detection runs only on segments that pass:
+
+```bash
+scrollscout check-segment paths/my_segment --fail-on-cross && ./run_ink_detection.sh paths/my_segment
+```
+
 The scroll and volume are read from the path or the tifxyz `meta.json` (`target_volume`); otherwise pass
 `--scroll` and `--volume`. Points whose surroundings show no papyrus in the CT (the segment has left the
 scroll, or the scan) are listed separately and drawn as crosses on the map.
