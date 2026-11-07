@@ -40,6 +40,9 @@ def collections_doc(groups) -> dict:
 
 
 def to_point_collections(scan: dict, clean_threshold: float = 0.63) -> dict:
+    """A scan result as a VC3D point-collections document: clean, middling and crushed points and the recommended
+    seeds, each in its own colour.
+    """
     s = scan["summary"]
     pts = [p for p in scan.get("points", []) if np.isfinite(p.get("score", np.nan))]
     return collections_doc([

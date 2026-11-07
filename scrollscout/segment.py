@@ -43,11 +43,15 @@ class Surface:
 
     @property
     def area_cm2(self) -> float | None:
+        """The area the tracer recorded in meta.json, if any."""
         a = self.meta.get("area_cm2")
         return float(a) if a is not None else None
 
 
 def read_tifxyz(folder) -> Surface:
+    """Read a tifxyz folder (x.tif, y.tif, z.tif and meta.json if present) into a Surface. Nodes with a negative
+    or non-finite coordinate are dropped; the grid row and column become the map coordinates.
+    """
     try:
         import tifffile
     except ImportError as e:  # pragma: no cover
@@ -133,6 +137,10 @@ def _download_tifxyz(key: str, dst: Path) -> Path:
 
 
 def load_surface(src: str) -> Surface:
+    """Load a segment from a tifxyz folder, a VC3D paths/<segment> folder, an OBJ file, or an s3:// or https://
+    address in the open-data bucket (downloaded into the cache, or into a temporary folder when
+    SCROLLSCOUT_NO_CACHE is set).
+    """
     if re.match(r"^(s3|https?)://", src):
         key = segment_key(src)
         if os.environ.get("SCROLLSCOUT_NO_CACHE"):  # stream only: read from a temporary folder
@@ -194,6 +202,10 @@ def spread_nodes(surface: Surface, n: int = 12) -> np.ndarray:
 
 def check_segment(surface: Surface, vol: Volume, cal: Calibration, n_points: int = 12, workers: int = 4,
                   log=None) -> dict:
+    """Score n_points nodes spread over the segment and judge it. Returns {'summary': verdict, median score,
+    share of clean points, crushed spots, points with no papyrus, errors; 'points': each point's position,
+    map coordinates, score and features}.
+    """
     thr = cal.stats.get("_good_threshold", {}).get("value", 0.63)
     idx = spread_nodes(surface, n_points)
     pts = [[int(round(c)) for c in surface.zyx[i]] for i in idx]

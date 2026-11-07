@@ -53,6 +53,10 @@ def summarize(rows, cal: Calibration, k: int = 5, min_sep_vox: float = 1500) -> 
 
 def scan_volume(vol: Volume, cal: Calibration, n_points: int = 64, workers: int = 4, half: int = HALF,
                 seed: int = 0, log=None) -> dict:
+    """Score n_points points spread through a volume's papyrus (stratified by height and distance from the axis)
+    and pick seeds. Returns {'summary': score statistics and seeds, 'points': every point with its
+    features, score and position in the scroll, 'coarse': the scroll's coarse geometry}.
+    """
     t0 = time.time()
     if vol.surface is None:
         raise ValueError(f"{vol.scroll} {vol.volume}: no published surface prediction")
